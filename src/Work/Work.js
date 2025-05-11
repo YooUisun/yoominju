@@ -1,10 +1,10 @@
-import React from 'react';
-import './Work.css';
+import React from "react";
+import "./Work.css";
 
 function Work() {
   const images = [
-    { label: 'Performances,Projects', src: '/img/Sample.webp' },
-    { label: 'Etc.', src: '/img/Sample.webp' },
+    { label: "Performances,Projects", src: "/img/Sample.webp" },
+    { label: "Etc.", src: "/img/Sample.webp" },
   ];
 
   return (
@@ -14,7 +14,7 @@ function Work() {
           key={index}
           className="horizontal-item"
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + item.src})`
+            backgroundImage: `url(${process.env.PUBLIC_URL + item.src})`,
           }}
         >
           <div className="overlay-text">{item.label}</div>

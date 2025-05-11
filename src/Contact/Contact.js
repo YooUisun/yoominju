@@ -10,7 +10,7 @@ function Contact() {
         <p>958.mum.gmail.com</p>
       </div>
 
-      <hr />
+      <hr /> 
 
       <div className="contact-mail">
         <p><strong>minjuGallery</strong></p>
