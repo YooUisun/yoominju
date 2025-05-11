@@ -1,0 +1,19 @@
+.contact-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align:left;
+  }
+  .contact-info {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+
+    margin-bottom: 50px;
+  }
+  
+  hr {
+    margin: 1.5rem 0;
+    border: 2px solid #000000;
+  }
+    .contact-mail {
+        font-size: 1.2rem;
+    }
