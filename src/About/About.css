@@ -1,11 +1,95 @@
 .about-section {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: #f9f9f9;
-  }
-  
-  .about-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
+  padding: 4rem 2rem;
+  background-color: #fff;
+  color: #111;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Exhibition Top Block */
+.exhibition-block {
+  text-align: center;
+}
+
+.exhibition-label {
+  font-size: 1rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.exhibition-image {
+  width: 450px;
+  height: 400px;
+  object-fit:cover;
+}
+
+.exhibition-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.exhibition-date {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 0.3rem;
+}
+
+.divider {
+  margin: 3rem 0 2rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+/* CV Section */
+.cv-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.cv-main {
+  text-align: center;      /* 텍스트를 가운데 정렬 */
+  margin: 2rem 0;          /* 원하는 여백을 조절 */
+}
+
+.cv-main h2 {
+    color: #213940;          /* 메인 컬러에 맞춤 */
+    font-weight: 300;
+}
+.cv-left {
+  flex: 1;
+  min-width: 180px;
+}
+
+.cv-left h3 {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.cv-right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cv-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.cv-title {
+  font-weight: 500;
+  color: #222;
+}
+
+.cv-date {
+  color: #777;
+  font-size: 0.95rem;
+}

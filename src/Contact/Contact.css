@@ -17,3 +17,12 @@
     .contact-mail {
         font-size: 1.2rem;
     }
+
+    .contact-section a {
+  color: #213940;      /* 메인 색상에 맞춰 변경 */
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}

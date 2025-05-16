@@ -31,10 +31,6 @@ function Layout() {
       <main>
         <Outlet />
       </main>
-
-      <footer className="footer">
-        <p>© 2025 YOOMINJU. All rights reserved.</p>
-      </footer>
     </>
   );
 }
@@ -48,9 +44,7 @@ function Home() {
 
   return (
     <div className="app">
-      <div className="hero">
-        <h2>The World of Minju</h2>
-      </div>
+      <div className="hero"></div>
       <section className="work-section">
         {images.map((item, index) => (
           <div
