@@ -1,7 +1,14 @@
+/* 공통 텍스트 스타일을 먼저 선언 */
+.about-section,
+.about-section * {
+  color: #213940;        /* CV 메인 타이틀과 동일한 메인 컬러 */
+  font-weight: 300;      /* CV 메인 타이틀과 동일한 폰트 웨이트 */
+}
+
+/* 기존 .about-section은 레이아웃만 담당하게 정리 */
 .about-section {
   padding: 4rem 2rem;
   background-color: #fff;
-  color: #111;
   max-width: 1000px;
   margin: 0 auto;
   font-family: 'Helvetica Neue', sans-serif;
@@ -14,7 +21,6 @@
 
 .exhibition-label {
   font-size: 1rem;
-  color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -22,27 +28,32 @@
 .exhibition-image {
   width: 450px;
   height: 400px;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 .exhibition-title {
   font-size: 1.5rem;
-  font-weight: bold;
 }
 
 .exhibition-date {
-  color: #666;
   font-size: 0.95rem;
   margin-top: 0.3rem;
 }
 
+/* 구분선 */
 .divider {
-  margin: 3rem 0 2rem 0;
+  margin: 3rem 0 2rem;
   border: none;
   border-top: 1px solid #ccc;
 }
 
 /* CV Section */
+.cv-main {
+  text-align: center;      
+  margin: 2rem 0;          
+}
+
+/* CV 레이아웃 */
 .cv-container {
   display: flex;
   gap: 2rem;
@@ -50,24 +61,17 @@
   align-items: flex-start;
 }
 
-.cv-main {
-  text-align: center;      /* 텍스트를 가운데 정렬 */
-  margin: 2rem 0;          /* 원하는 여백을 조절 */
-}
-
-.cv-main h2 {
-    color: #213940;          /* 메인 컬러에 맞춤 */
-    font-weight: 300;
-}
 .cv-left {
   flex: 1;
   min-width: 180px;
 }
 
+.cv-left h2,
 .cv-left h3 {
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-  color: #444;
+  font-size: 1.5rem;    /* 필요에 따라 Auszeichnungen 쪽 실제 크기에 맞춰 조정 */
+  font-weight: 300;     /* 동일한 폰트 웨이트 */
+  color: #444;          /* 동일한 컬러 */
+  margin-bottom: 2rem;  /* 동일한 여백 */
 }
 
 .cv-right {
@@ -78,17 +82,17 @@
 }
 
 .cv-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr; /* 제목 2, 장소 2, 연도 1 비율 */
+  align-items: center;
+  gap: 1rem; /* 칸 사이 간격 */
   padding-bottom: 0.5rem;
 }
 
 .cv-title {
-  font-weight: 500;
-  color: #222;
+  /* 색상, 웨이트는 이미 공통으로 적용됨 */
 }
 
 .cv-date {
-  color: #777;
   font-size: 0.95rem;
 }

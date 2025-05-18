@@ -6,14 +6,14 @@ function About() {
     <section id="about" className="about-section">
       {/* Exhibition Header */}
       <div className="exhibition-block">
-        <h2 className="exhibition-label">Exhibition</h2>
+        <h2 className="exhibition-label">Ausstellung</h2>
         <img
           src={process.env.PUBLIC_URL + "/img/Sample.webp"}
-          alt="Exhibition Poster"
+          alt="Ausstellungsplakat"
           className="exhibition-image"
         />
-        <h3 className="exhibition-title">Title</h3>
-        <p className="exhibition-date">May 9 – July 20, 2025</p>
+        <h3 className="exhibition-title">Titel</h3>
+        <p className="exhibition-date">9. Mai – 20. Juli 2025</p>
       </div>
 
       <hr className="divider" />
@@ -22,58 +22,99 @@ function About() {
       <div className="cv-main">
         <h2>CV</h2>
       </div>
+
+      {/* Ausbildung */}
       <div className="cv-container">
         <div className="cv-left">
-          <h3>Schulbildung</h3>
+          <h2>Ausbildung</h2>
         </div>
         <div className="cv-right">
           <div className="cv-item">
-            <p className="cv-title">
-              Seit 10/2019 – Studium an der UdK, Berlin
-            </p>
-            <p className="cv-date">Bildende Kunst</p>
+            <p className="cv-title">Bildende Kunst</p>
+            <p className="cv-location">Universität der Künste Berlin, Berlin, Deutschland</p>
+            <p className="cv-year">2019 – 2025</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">
-              03/2014 – 08/2019 – Sangmyung Universität, Cheonan
-            </p>
-            <p className="cv-date">Department of Photography & Visual Media</p>
+            <p className="cv-title">Klasse von Prof. Pryde</p>
+            <p className="cv-location"></p>
+            <p className="cv-year">2022 – 2025</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">02/2014 – Koreanisches Abitur, Asan</p>
-            <p className="cv-date">Seolhwa Highschool, Südkorea</p>
+            <p className="cv-title">Klasse von Prof. Neugebauer</p>
+            <p className="cv-location"></p>
+            <p className="cv-year">2020 – 2022</p>
+          </div>
+          <div className="cv-item">
+            <p className="cv-title">Sangmyung Universität – Department für Fotografie & Visuelle Medien</p>
+            <p className="cv-location">Cheonan, Südkorea</p>
+            <p className="cv-year">2014 – 2016</p>
           </div>
         </div>
       </div>
 
       <hr className="divider" />
 
+      {/* Auszeichnungen */}
       <div className="cv-container">
         <div className="cv-left">
-          <h3>Berufliche Tätigkeiten</h3>
+          <h3>Auszeichnungen</h3>
         </div>
         <div className="cv-right">
           <div className="cv-item">
-            <p className="cv-title">
-              07/2020 – 11/2023 – Diverse Ausstellungen als Künstlerin
-            </p>
-            <p className="cv-date">Butterbutter Projekt 2020 (Online)</p>
+            <p className="cv-title">STIBET I Studienabschluss-Stipendium</p>
+            <p className="cv-location">DAAD</p>
+            <p className="cv-year">2024</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">Sleeping Promises</p>
-            <p className="cv-date">Feldfünf Metropolenhaus Berlin</p>
+            <p className="cv-title">ASYAAF Kulturstation Seoul 284</p>
+            <p className="cv-location">Seoul, Südkorea</p>
+            <p className="cv-year">2014</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">Re : Fussion Crossing the Line</p>
-            <p className="cv-date">UdK Berlin</p>
+            <p className="cv-title">The 7th Daum Junior Photography Festival</p>
+            <p className="cv-location">Parkgeonhi Stiftung, Südkorea</p>
+            <p className="cv-year">2013</p>
+          </div>
+        </div>
+      </div>
+
+      <hr className="divider" />
+
+      {/* Ausstellungen */}
+      <div className="cv-container">
+        <div className="cv-left">
+          <h3>Ausstellungen</h3>
+        </div>
+        <div className="cv-right">
+          <div className="cv-item">
+            <p className="cv-title">Schritte²</p>
+            <p className="cv-location">Kunstraum Potsdamer Straße, Berlin</p>
+            <p className="cv-year">2024</p>
+          </div>
+          <div className="cv-item">
+            <p className="cv-title">Re:Fusion Crossing the Line</p>
+            <p className="cv-location">UdK, Berlin</p>
+            <p className="cv-year">2023</p>
           </div>
           <div className="cv-item">
             <p className="cv-title">1, 2</p>
-            <p className="cv-date">Treize Paris</p>
+            <p className="cv-location">Treize, Paris</p>
+            <p className="cv-year">2023</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">und viele mehr</p>
-            <p className="cv-date">—</p>
+            <p className="cv-title">Joyfully Waiting 13 Crackle by 1, 2</p>
+            <p className="cv-location">Online</p>
+            <p className="cv-year">2023</p>
+          </div>
+          <div className="cv-item">
+            <p className="cv-title">Sleeping Promises</p>
+            <p className="cv-location">Feldfünf Metropolenhaus, Berlin</p>
+            <p className="cv-year">2022</p>
+          </div>
+          <div className="cv-item">
+            <p className="cv-title">Butterbutter Projekt</p>
+            <p className="cv-location">Online</p>
+            <p className="cv-year">2020</p>
           </div>
         </div>
       </div>
