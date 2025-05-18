@@ -6,14 +6,14 @@ function About() {
     <section id="about" className="about-section">
       {/* Exhibition Header */}
       <div className="exhibition-block">
-        <h2 className="exhibition-label">Ausstellung</h2>
+        <h2 className="exhibition-label">Exhibition</h2>
         <img
           src={process.env.PUBLIC_URL + "/img/Sample.webp"}
-          alt="Ausstellungsplakat"
+          alt="Exhibition Poster"
           className="exhibition-image"
         />
-        <h3 className="exhibition-title">Titel</h3>
-        <p className="exhibition-date">9. Mai – 20. Juli 2025</p>
+        <h3 className="exhibition-title">Title</h3>
+        <p className="exhibition-date">May 9 – July 20, 2025</p>
       </div>
 
       <hr className="divider" />
@@ -23,30 +23,36 @@ function About() {
         <h2>CV</h2>
       </div>
 
-      {/* Ausbildung */}
+      {/* Education */}
       <div className="cv-container">
         <div className="cv-left">
-          <h2>Ausbildung</h2>
+          <h2>Education</h2>
         </div>
         <div className="cv-right">
+          {/* Universität der Künste Berlin Item */}
           <div className="cv-item">
-            <p className="cv-title">Bildende Kunst</p>
-            <p className="cv-location">Universität der Künste Berlin, Berlin, Deutschland</p>
+            <p className="cv-title">Universität der Künste Berlin</p>
+            <p className="cv-subtitle">Bildende Kunst</p>
+            <p className="cv-location">Berlin, Germany</p>
             <p className="cv-year">2019 – 2025</p>
           </div>
+
+          {/* Class of Prof. Pryde Item */}
           <div className="cv-item">
-            <p className="cv-title">Klasse von Prof. Pryde</p>
-            <p className="cv-location"></p>
+            <p className="cv-title">Class of Prof. Pryde</p>
             <p className="cv-year">2022 – 2025</p>
           </div>
+
+          {/* Class of Prof. Neugebauer Item */}
           <div className="cv-item">
-            <p className="cv-title">Klasse von Prof. Neugebauer</p>
-            <p className="cv-location"></p>
+            <p className="cv-title">Class of Prof. Neugebauer</p>
             <p className="cv-year">2020 – 2022</p>
           </div>
+
+          {/* Sangmyung University Item */}
           <div className="cv-item">
-            <p className="cv-title">Sangmyung Universität – Department für Fotografie & Visuelle Medien</p>
-            <p className="cv-location">Cheonan, Südkorea</p>
+            <p className="cv-title">Sangmyung University – College of Art, Department of Photography & Visual Media</p>
+            <p className="cv-location">South Korea</p>
             <p className="cv-year">2014 – 2016</p>
           </div>
         </div>
@@ -54,25 +60,25 @@ function About() {
 
       <hr className="divider" />
 
-      {/* Auszeichnungen */}
+      {/* Awards */}
       <div className="cv-container">
         <div className="cv-left">
-          <h3>Auszeichnungen</h3>
+          <h3>Awards</h3>
         </div>
         <div className="cv-right">
           <div className="cv-item">
-            <p className="cv-title">STIBET I Studienabschluss-Stipendium</p>
+            <p className="cv-title">„STIBET I“ Studienabschluss-Stipendium</p>
             <p className="cv-location">DAAD</p>
             <p className="cv-year">2024</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">ASYAAF Kulturstation Seoul 284</p>
-            <p className="cv-location">Seoul, Südkorea</p>
+            <p className="cv-title">„ASYAAF“ Culture Station Seoul 284</p>
+            <p className="cv-location">Seoul, South Korea</p>
             <p className="cv-year">2014</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">The 7th Daum Junior Photography Festival</p>
-            <p className="cv-location">Parkgeonhi Stiftung, Südkorea</p>
+            <p className="cv-title">„The 7th Daum Junior Photography Festival“</p>
+            <p className="cv-location">Parkgeonhi Foundation, South Korea</p>
             <p className="cv-year">2013</p>
           </div>
         </div>
@@ -80,10 +86,10 @@ function About() {
 
       <hr className="divider" />
 
-      {/* Ausstellungen */}
+      {/* Exhibitions */}
       <div className="cv-container">
         <div className="cv-left">
-          <h3>Ausstellungen</h3>
+          <h3>Exhibitions</h3>
         </div>
         <div className="cv-right">
           <div className="cv-item">
@@ -93,7 +99,7 @@ function About() {
           </div>
           <div className="cv-item">
             <p className="cv-title">Re:Fusion Crossing the Line</p>
-            <p className="cv-location">UdK, Berlin</p>
+            <p className="cv-location">Universität der Künste Berlin, Berlin</p>
             <p className="cv-year">2023</p>
           </div>
           <div className="cv-item">
@@ -102,7 +108,7 @@ function About() {
             <p className="cv-year">2023</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">Joyfully Waiting 13 Crackle by 1, 2</p>
+            <p className="cv-title">Joyfully waiting 13 Crackle by 1, 2</p>
             <p className="cv-location">Online</p>
             <p className="cv-year">2023</p>
           </div>
