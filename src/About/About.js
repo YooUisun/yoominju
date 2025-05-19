@@ -24,36 +24,23 @@ function About() {
       </div>
 
       {/* Education */}
-      <div className="cv-container">
+      <div className="cv-container education">
         <div className="cv-left">
           <h3>Education</h3>
         </div>
         <div className="cv-right">
-          {/* Universität der Künste Berlin Item */}
+          {/* 1) Universität der Künste Berlin */}
           <div className="cv-item">
             <p className="cv-title">Universität der Künste Berlin</p>
-            <p className="cv-subtitle">: Bildende Kunst</p>
+            <p className="cv-subtitle">: Bildende Kunst, Class of Prof. Pryde</p>
             <p className="cv-location">Germany</p>
             <p className="cv-year">2019 – 2025</p>
           </div>
 
-          {/* Class of Prof. Pryde Item */}
-          <div className="cv-item">
-            <p className="cv-title">Class of Prof. Pryde</p>
-            <p className="cv-year">2022 – 2025</p>
-          </div>
-
-          {/* Class of Prof. Neugebauer Item */}
-          <div className="cv-item">
-            <p className="cv-title">Class of Prof. Neugebauer</p>
-            <p className="cv-year">2020 – 2022</p>
-          </div>
-
-          {/* Sangmyung University Item */}
+          {/* 4) Sangmyung University */}
           <div className="cv-item">
             <p className="cv-title">Sangmyung University</p>
             <p className="cv-subtitle">: Photography & Visual Media</p>
-
             <p className="cv-location">South Korea</p>
             <p className="cv-year">2014 – 2016</p>
           </div>
@@ -105,13 +92,13 @@ function About() {
             <p className="cv-year">2023</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">1, 2</p>
-            <p className="cv-location">Treize, Paris</p>
+            <p className="cv-title">Joyfully waiting 13 Crackle by 1, 2</p>
+            <p className="cv-location">Online</p>
             <p className="cv-year">2023</p>
           </div>
           <div className="cv-item">
-            <p className="cv-title">Joyfully waiting 13 Crackle by 1, 2</p>
-            <p className="cv-location">Online</p>
+            <p className="cv-title">1, 2</p>
+            <p className="cv-location">Treize, Paris</p>
             <p className="cv-year">2023</p>
           </div>
           <div className="cv-item">
