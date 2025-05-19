@@ -46,6 +46,7 @@
 .cv-main {
   text-align: center;
   margin: 2rem 0;
+  margin-bottom: 100px;
 }
 .cv-container {
   display: flex;
