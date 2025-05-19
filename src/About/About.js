@@ -26,14 +26,14 @@ function About() {
       {/* Education */}
       <div className="cv-container">
         <div className="cv-left">
-          <h2>Education</h2>
+          <h3>Education</h3>
         </div>
         <div className="cv-right">
           {/* Universität der Künste Berlin Item */}
           <div className="cv-item">
             <p className="cv-title">Universität der Künste Berlin</p>
-            <p className="cv-subtitle">Bildende Kunst</p>
-            <p className="cv-location">Berlin, Germany</p>
+            <p className="cv-subtitle">: Bildende Kunst</p>
+            <p className="cv-location">Germany</p>
             <p className="cv-year">2019 – 2025</p>
           </div>
 
@@ -51,7 +51,9 @@ function About() {
 
           {/* Sangmyung University Item */}
           <div className="cv-item">
-            <p className="cv-title">Sangmyung University – College of Art, Department of Photography & Visual Media</p>
+            <p className="cv-title">Sangmyung University</p>
+            <p className="cv-subtitle">: Photography & Visual Media</p>
+
             <p className="cv-location">South Korea</p>
             <p className="cv-year">2014 – 2016</p>
           </div>
