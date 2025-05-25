@@ -1,28 +1,36 @@
 .contact-section {
-    padding: 2rem;
-    background-color: #ffffff;
-    text-align:left;
-  }
-  .contact-info {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;  /* 가운데 정렬 */
+  align-items: center;      /* 수직 가운데 정렬 */
+  padding: 3rem;
+  gap: 50rem;                /* 두 아이템 사이 여백 */
+  margin-top: 17%;
+}
 
-    margin-bottom: 50px;
-  }
-  
-  hr {
-    margin: 1.5rem 0;
-    border: 2px solid #000000;
-  }
-    .contact-mail {
-        font-size: 1.2rem;
-    }
+/* 불필요한 margin 모두 제거 */
+.contact-info,
+.contact-mail {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin: 0;
+}
 
-    .contact-section a {
-  color: #213940;      /* 메인 색상에 맞춰 변경 */
-  text-decoration: none;
+/* 가로 링크 스타일 */
+.contact-section a {
+  font-size: 1.2rem;
+  font-weight: 300;
+
 }
 
 .contact-section a:hover {
   text-decoration: underline;
+}
+
+hr {
+  margin: 1.5rem 0;
+}
+.contact-info p a,
+.contact-mail p a {
+  margin-left: 9rem; /* 필요에 따라 값 조절 */
 }

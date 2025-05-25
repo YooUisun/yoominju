@@ -1,0 +1,70 @@
+/* src/Work/WorkDetail.css */
+.detail-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #213940;
+  font-weight: bold;
+}
+
+.detail-header {
+  margin-bottom: 20px;
+}
+
+.detail-title {
+  margin: 0;
+  font-size: 2rem;
+  color: #213940;
+}
+
+.detail-meta {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.detail-main-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.detail-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.detail-thumb {
+  flex: 1 1 calc(33.333% - 10px);
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.detail-thumb img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.detail-thumb:hover img {
+  transform: scale(1.05);
+}
+
+.detail-description {
+  line-height: 1.6;
+  font-size: 1rem;
+}

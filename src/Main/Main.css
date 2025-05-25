@@ -38,18 +38,18 @@ a {
 
 .logo {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 60px;
   font-size: 1.5rem;
-  font-weight: bold;
-  color: black;
+  font-weight: 300;
 }
 
 .nav-list {
   margin-right: 60px;
   list-style: none;
   display: flex;
-  gap: 1.5rem;
-  color: black;
+  gap: 3rem;
+  color: #213940;
+  margin-top: 28px;
 }
 
 .nav-list li a {

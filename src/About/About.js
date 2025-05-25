@@ -4,19 +4,6 @@ import "./About.css";
 function About() {
   return (
     <section id="about" className="about-section">
-      {/* Exhibition Header */}
-      <div className="exhibition-block">
-        <h2 className="exhibition-label">Exhibition</h2>
-        <img
-          src={process.env.PUBLIC_URL + "/img/Sample.webp"}
-          alt="Exhibition Poster"
-          className="exhibition-image"
-        />
-        <h3 className="exhibition-title">Title</h3>
-        <p className="exhibition-date">May 9 – July 20, 2025</p>
-      </div>
-
-      <hr className="divider" />
 
       {/* CV Section */}
       <div className="cv-main">
