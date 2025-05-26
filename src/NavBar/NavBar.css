@@ -1,0 +1,42 @@
+.header {
+  flex: 0 0 auto; /* 헤더는 고정 크기 */
+  width: 100%;
+  background: #ffffff;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 20px;
+  margin-left: 60px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.nav-list {
+  margin-right: 60px;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  color: #213940;
+  margin-top: 28px;
+}
+
+.nav-list li a {
+  font-size: 1rem;
+  color: #213940;
+  display: inline-block; /* margin-top 효과를 위해 필요 */
+}
+
+.nav-list li a:hover {
+  opacity: 0.7;
+}
+
+/* 활성화된 링크에 margin-top 내려오는 효과 */
+.nav-list li a.active-nav-link {
+  margin-top: 20px;
+}
