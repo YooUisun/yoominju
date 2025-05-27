@@ -23,7 +23,6 @@ export default function News() {
       <div className="exhibition-row">
         {newsItem.images.map((img, index) => (
           <Link
-            to={`/news/${newsItem.id}`}
             className="exhibition-image-wrapper"
             key={index}
           >

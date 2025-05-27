@@ -63,8 +63,9 @@
 }
 
 .exhibition-label {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
+  margin-top: 32px;
 }
 
 .exhibition-row {
@@ -77,6 +78,7 @@
 .exhibition-image-wrapper {
   flex: 1;
   display: block;
+  cursor: default;
 }
 
 .exhibition-image {
@@ -94,4 +96,7 @@
 .exhibition-date {
   font-size: 1rem;
   color: #777;
+}
+.about-section .exhibition-image-wrapper {
+  cursor: default;
 }
