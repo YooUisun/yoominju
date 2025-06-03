@@ -1,19 +1,30 @@
-.main-container {
-  width: 100%;
-  height: 1000px;
-  background-size: cover;       /* 이미지 꽉 채우기 */
-  background-position: center;  /* 중앙 정렬 */
-  background-repeat: no-repeat; /* 이미지 반복 방지 */
-  cursor: pointer;
-  transition: background 0.3s ease;
-  will-change: background-image; /* 성능 향상 */
-  overflow: hidden;             /* 혹시 스크롤 생길 경우 제거 */
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* 스크롤 방지 */
+  height: 100%;
 }
 
-.main-container:hover {
-  background-size:
-    700px 800px,    /* 모자이크 도트 크기 */
-    cover;        /* 원래 이미지 크기 */
-  background-position: center, center;
-  background-repeat: repeat, no-repeat;
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; /* 이미지 꽉 채우기 */
+  background-position: center;
+  position: relative;
+  cursor: none; /* 기본 커서 제거 */
+  overflow: hidden;
+}
+
+.mosaic-overlay {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  clip-path: circle(55% at center);
+  mix-blend-mode: multiply;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 }
