@@ -1,36 +1,58 @@
 .contact-section {
   background-color: #ffffff;
   display: flex;
-  justify-content: center;  /* 가운데 정렬 */
-  align-items: center;      /* 수직 가운데 정렬 */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;         /* ❗줄바꿈 금지 */
   padding: 3rem;
-  gap: 50rem;                /* 두 아이템 사이 여백 */
   margin-top: 17%;
+  gap: 50rem;
+  overflow-x: auto;          /* ❗가로 스크롤 허용 */
+  white-space: nowrap;
+  min-width: 800px;
 }
 
-/* 불필요한 margin 모두 제거 */
 .contact-info,
 .contact-mail {
   font-size: 1.2rem;
   font-weight: 300;
   margin: 0;
+  min-width: 250px;
+  white-space: nowrap;
+  text-align: center;
 }
 
-/* 가로 링크 스타일 */
 .contact-section a {
   font-size: 1.2rem;
   font-weight: 300;
-
 }
 
 .contact-section a:hover {
   text-decoration: underline;
 }
 
-hr {
-  margin: 1.5rem 0;
-}
 .contact-info p a,
 .contact-mail p a {
-  margin-left: 9rem; /* 필요에 따라 값 조절 */
+  margin-left: 2rem;
+}
+
+/* ✅ 모바일에서도 가로 정렬 유지 */
+@media (max-width: 768px) {
+  .contact-section {
+    overflow-x: auto;
+    flex-wrap: nowrap;         /* 모바일도 줄바꿈 금지 */
+    gap: 4rem;
+    padding: 2rem;
+    min-width: 600px;          /* 조금 줄여도 되지만 고정 유지 */
+  }
+
+  .contact-info,
+  .contact-mail {
+    min-width: 200px;
+  }
+
+  .contact-info p a,
+  .contact-mail p a {
+    margin-left: 1rem;
+  }
 }
