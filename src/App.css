@@ -7,3 +7,8 @@
 .page-content {
   flex: 1;
 }
+/* 기본 스크롤 허용 */
+body, html {
+  overflow-y: auto;
+  height: auto;
+}
