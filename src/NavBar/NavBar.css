@@ -1,8 +1,7 @@
+/* 공통 */
 .header {
-  flex: 0 0 auto;
   width: 100%;
   background: #ffffff;
-  min-width: 800px;
   overflow-x: auto;
 }
 
@@ -10,58 +9,122 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 800px;
-  white-space: nowrap;
+  position: relative; /* 드롭다운 기준 */
 }
 
-.logo {
-  margin-top: 20px;
-  margin-left: 60px;
-  font-size: 1.5rem;
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.3rem;
   font-weight: 300;
+  margin: 0px 0 0 0px;
+}
+.logo {
+  margin-top: 13px;
+  margin-left: 15px;
+  font-size: 1.5rem;
   min-width: 150px;
   white-space: nowrap;
 }
 
 .nav-list {
-  margin-right: 60px;
   list-style: none;
   display: flex;
   gap: 3rem;
-  margin-top: 28px;
-  white-space: nowrap;
-  overflow-x: auto;
+  margin: 5px 0px 0 0;
+  margin-right: 30px;
 }
 
 .nav-list li a {
   font-size: 1rem;
   color: #213940;
-  display: inline-block;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+/* hover 시 투명도 변경 */
 .nav-list li a:hover {
   opacity: 0.7;
 }
 
+/* 현재 페이지인 메뉴 강조 - 아래로 내려오는 효과 추가 */
 .nav-list li a.active-nav-link {
-  margin-top: 20px;
+  display: inline-block;     /* margin-top 효과 제대로 먹게 */
+  margin-top: 10px;          /* 아래로 살짝 내려감 */
 }
 
-/* ✅ 모바일도 동일한 가로 정렬 유지 */
-@media (max-width: 768px) {
+/* 햄버거 기본 (숨김) -> 수직 점 3개(미트볼 메뉴) 아이콘 */
+.hamburger {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;          /* 점 사이 간격 */
+  width: 32px;       /* 3점 + 간격 포함 */
+  height: 6px;       /* 점 크기 */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: content-box;
+  position: absolute; /* nav-container 기준 */
+  top: 20px;
+  right: 10px;
+  z-index: 2;
+}
+
+.hamburger .bar {
+  width: 6px;
+  height: 6px;
+  background-color: #213940;
+  border-radius: 50%;
+  transition: background 0.2s ease;
+}
+
+/* 모바일 전용 */
+@media (max-width: 500px) {
+  .header,
   .nav-container {
-    flex-wrap: nowrap;
-    overflow-x: auto;
+    overflow: visible !important;
+    min-width: unset !important;
   }
 
+  /* 햄버거 항상 보이기 */
+  .hamburger {
+    display: flex !important;
+  }
+
+  /* 드롭다운 메뉴 숨김 */
   .nav-list {
-    gap: 2rem;
-    overflow-x: auto;
-    padding-bottom: 0.5rem;
+    display: none;
+    position: absolute; /* nav-container 기준 */
+    top: 42px;       /* 햄버거 바로 아래 (20px + 22px) */
+    right: 10px;     /* 햄버거와 수평 정렬 */
+    background: #fff;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 8px 16px rgba(33,57,64,0.2);
+    border-radius: 8px;
+    flex-direction: column;
+    gap: 0.8rem;
+    white-space: nowrap;
+    width: fit-content;
+    overflow: visible;
+    z-index: 2000;
+    user-select: none;
   }
 
-  .logo {
-    font-size: 1.2rem;
-    margin-left: 1rem;
+  /* 열릴 때만 보이기 */
+  .nav-list.active {
+    display: flex !important;
+  }
+
+  .nav-list li a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #213940;
+  }
+  .nav-list li a:hover,
+  .nav-list li a.active-nav-link {
+    /* 모바일에서는 따로 margin-top 안 줄임 (필요하면 추가 가능) */
   }
 }
