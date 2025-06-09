@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/yoominju/static/css/main.666fe8a0.css",
-    "main.js": "/yoominju/static/js/main.e42170ce.js",
+    "main.js": "/yoominju/static/js/main.75175ae5.js",
     "index.html": "/yoominju/index.html",
     "main.666fe8a0.css.map": "/yoominju/static/css/main.666fe8a0.css.map",
-    "main.e42170ce.js.map": "/yoominju/static/js/main.e42170ce.js.map"
+    "main.75175ae5.js.map": "/yoominju/static/js/main.75175ae5.js.map"
   },
   "entrypoints": [
     "static/css/main.666fe8a0.css",
-    "static/js/main.e42170ce.js"
+    "static/js/main.75175ae5.js"
   ]
 }
