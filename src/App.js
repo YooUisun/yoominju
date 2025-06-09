@@ -16,13 +16,13 @@ import "./App.css";
 
 export default function App() {
   const location = useLocation();
-  const isMainPage = location.pathname === "/";
+  const isMainPage = location.pathname === "/yoominju";
 
   return (
     <>
       {!isMainPage && <NavBar />}
       <Routes>
-        <Route path="/" element={<Main />} />
+        <Route path="/yoominju" element={<Main />} />
         <Route path="/work" element={<Work />} />
         <Route path="/work/:id" element={<WorkDetail />} />
         <Route path="/news" element={<News />} />
