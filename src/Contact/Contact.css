@@ -56,3 +56,25 @@
     margin-left: 1rem;
   }
 }
+
+/* ✅ 모바일: 세로 정렬 + 왼쪽 정렬 + 스크롤 제거 */
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;        /* 🔥 세로 정렬 */
+    align-items: flex-start;       /* 🔥 왼쪽 정렬 */
+    gap: 2rem;
+    padding: 2rem;
+    margin-top: 10%;
+  }
+
+  .contact-info,
+  .contact-mail {
+    min-width: auto;
+    text-align: left;              /* 🔥 텍스트도 왼쪽 정렬 */
+  }
+
+  .contact-info p a,
+  .contact-mail p a {
+    margin-left: 0;                /* 🔥 여백 제거 */
+  }
+}
