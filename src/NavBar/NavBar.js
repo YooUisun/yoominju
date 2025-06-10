@@ -56,7 +56,7 @@ function NavBar() {
                 className={isActive("/work") ? "active-nav-link" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                WORK
+                WORKS
               </Link>
             </li>
             <li>

@@ -1,47 +1,86 @@
 // src/Work/Work.js
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Work.css';
+import React from "react";
+import GridLayout from "react-grid-layout";
+import { Link } from "react-router-dom";
+import "react-grid-layout/css/styles.css";
+import "react-resizable/css/styles.css";
+import "./Work.css";
 
-const images = [
-  { src: '/img/WorksMain/18.webp', title: '18', year: '2024', location: 'Seoul' },
-  { src: '/img/Sample2.jpg', title: '의선의 여행', year: '2023', location: 'Busan' },
-  // 추가 시 여기에만 객체를 늘리면 됩니다.
+const workData = [
+  {
+    id: 1,
+    src: "/img/WorksMain/18.webp",
+    title: "18",
+    year: "2024",
+    location: "",
+  },
+  {
+    id: 2,
+    src: "/img/WorksMain/Words.webp",
+    title: "Words",
+    year: "2023",
+    location: "Korea",
+  },
+  {
+    id: 3,
+    src: "/img/WorksMain/Words.webp",
+    title: "Words",
+    year: "2023",
+    location: "Korea",
+  },
+
+  // 더 추가 가능
 ];
 
-const workData = Array.from({ length: 15 }, (_, i) => {
-  const img = images[i % images.length];
-  return {
-    id: i + 1,
-    image: img.src,
-    title: img.title,
-    year: img.year,
-    location: img.location,
-  };
-});
+const layout = [
+  { i: "1", x: 0, y: 0, w: 4, h: 10 },
+  { i: "2", x: 3, y: 0, w: 3, h: 10 },
+  { i: "3", x: 8, y: 0, w: 2, h: 10 },
+];
+  // 좌표 자유롭게 수정 가능
+  //x = 가로위치 열 번호 몇 번째 열 에 배치할지지
+  //y = 세로위치 행 번호 몇 번째 줄 에 넣을지
+  //w = 가로위치 너비 몇 칸 차지할지
+  //h = 세로위치 너비 몇 칸 차지할지
+
 
 export default function Work() {
   return (
     <div className="work-container">
-      {workData.map((item, idx) => (
-        <Link to={`/work/${item.id}`} key={item.id} className="work-link">
-          <div className={`work-item item-${idx + 1}`}>
-            <img
-              src={process.env.PUBLIC_URL + item.image}
-              alt={item.title}
-              className="thumb"
-            />
-            {/* 캡션을 이미지 아래로 이동 */}
-            <div className="caption">
-              <div className="caption-title">{item.title}</div>
-              <div className="caption-info">{item.year} | {item.location}</div>
-            </div>
+      <GridLayout
+        className="layout"
+        layout={layout}
+        cols={12}
+        rowHeight={30}
+        width={1200}
+        isResizable={false}
+        isDraggable={false}
+        autoSize={true} // 이게 핵심!!
+      >
+        {workData.map((item) => (
+          <div key={String(item.id)} className="work-grid-item">
+            <Link to={`/work/${item.id}`} className="work-link">
+              <img
+                src={process.env.PUBLIC_URL + item.src}
+                alt={item.title}
+                className="thumb"
+              />
+              <div className="caption">
+                <div className="caption-title">{item.title}</div>
+                <div className="caption-info">
+                  {item.year} | {item.location}
+                </div>
+              </div>
+            </Link>
           </div>
-        </Link>
-      ))}
+        ))}
+      </GridLayout>
+
       <div className="artist-thoughts">
-        <h3>글 쓰는 곳 </h3>
-        <p>여기는 글 쓰는 곳 입니다. ㅁㄴㅇㅁ노ㅓㅣㅏㅑ윤미ㅑㅏㅗ율니ㅓㅗ류미ㅓㅗㅇ륭ㅁ너ㅣㅏㅗ륨ㄴ어ㅏㅣㅗ륜어마ㅣㅗ륜ㅇ머ㅏㅗ륜ㅇ머ㅏㅗㅠ</p>
+        <p>
+          여기는 글 쓰는 곳 입니다. 작가로서의 생각, 전시 방향 등등 아무거나
+          자유롭게 적어도 돼!
+        </p>
       </div>
     </div>
   );

@@ -37,34 +37,33 @@
   object-fit: cover;
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.detail-gallery {
+/* 👇 세로 갤러리 구성 */
+.detail-gallery-vertical {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.detail-thumb {
-  flex: 1 1 calc(33.333% - 10px);
-  overflow: hidden;
-  border-radius: 4px;
+.detail-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .detail-thumb img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
-  transition: transform 0.3s;
-}
-
-.detail-thumb:hover img {
-  transform: scale(1.05);
+  max-width: 800px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .detail-description {
-  line-height: 1.6;
+  margin-top: 10px;
   font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  max-width: 800px;
 }

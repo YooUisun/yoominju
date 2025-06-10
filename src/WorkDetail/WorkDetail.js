@@ -3,20 +3,19 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import "./WorkDetail.css";
 
-// Work.js와 동일한 데이터에 description, gallery 필드만 추가
 const workData = [
   {
     id: 1,
-    title: "민주의 여행",
+    title: "18",
     year: "2024",
     location: "Seoul",
-    image: "/img/Sample.webp",
-    description:
-      "민주 작가의 첫 서울 프로젝트. 프로세스와 인사이트 설명을 여기에 작성하세요.",
     gallery: [
-      "/img/Sample_detail1.jpg",
-      "/img/Sample_detail2.jpg",
-      "/img/Sample_detail3.jpg",
+      { src: "/img/18SubPic/1.webp", text: "작품 설명 1." },
+      { src: "/img/18SubPic/2.webp", text: "작품 설명 2." },
+      { src: "/img/18SubPic/3.webp", text: "작품 설명 3." },
+      { src: "/img/18SubPic/4.webp", text: "작품 설명 4." },
+      { src: "/img/18SubPic/5.webp", text: "작품 설명 5." },
+      { src: "/img/18SubPic/7.webp", text: "작품 설명 6." },
     ],
   },
   {
@@ -24,12 +23,12 @@ const workData = [
     title: "의선의 여행",
     year: "2023",
     location: "Busan",
-    image: "/img/Sample2.jpg",
-    description:
-      "의선 작가의 부산 프로젝트. 주요 키워드와 해설을 여기에 작성하세요.",
-    gallery: ["/img/Sample2_detail1.jpg", "/img/Sample2_detail2.jpg"],
+    gallery: [
+      { src: "/img/Sample2_detail1.jpg", text: "ID 2 작품 설명 1입니다." },
+      { src: "/img/Sample2_detail2.jpg", text: "ID 2작품 설명 2입니다." },
+    ],
   },
-  // ... 총 15개씩 동일하게 추가
+  // ... 나머지도 같은 형식으로 이어서 작성
 ];
 
 export default function WorkDetail() {
@@ -59,23 +58,20 @@ export default function WorkDetail() {
         </p>
       </div>
 
-      <div className="detail-main-image">
-        <img src={process.env.PUBLIC_URL + item.image} alt={item.title} />
-      </div>
-
-      <div className="detail-gallery">
-        {item.gallery.map((src, idx) => (
-          <div key={idx} className="detail-thumb">
-            <img
-              src={process.env.PUBLIC_URL + src}
-              alt={`${item.title} detail ${idx + 1}`}
-            />
+      <div className="detail-gallery-vertical">
+        {item.gallery.map((entry, idx) => (
+          <div key={idx} className="detail-block">
+            <div className="detail-thumb">
+              <img
+                src={process.env.PUBLIC_URL + entry.src}
+                alt={`${item.title} detail ${idx + 1}`}
+              />
+            </div>
+            <div className="detail-description">
+              <p>{entry.text}</p>
+            </div>
           </div>
         ))}
-      </div>
-
-      <div className="detail-description">
-        <p>{item.description}</p>
       </div>
     </div>
   );

@@ -1,19 +1,25 @@
 /* 전체 컨테이너 */
 .work-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr) 1fr;
-  gap: 16px;
-  padding: 16px;
-  max-width: 1400px;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  max-width: 2000px;
   margin: 0 auto;
-  grid-auto-rows: auto;
+  align-items: flex-start;  /* 상단 정렬 */
+}
+
+/* Masonry 그리드 */
+.my-masonry-grid {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
+.my-masonry-grid_column {
+  background-clip: padding-box;
 }
 
 /* 각 이미지 항목 */
 .work-item {
-  background: none;
-  box-shadow: none;
-  overflow: visible;
   margin-bottom: 16px;
 }
 
@@ -22,12 +28,11 @@
   height: auto;
   object-fit: cover;
   display: block;
+  border-radius: 8px;
   margin-bottom: 4px;
 }
 
 .caption {
-  padding: 0;
-  background: none;
   text-align: left;
 }
 
@@ -52,29 +57,22 @@
 
 /* 작가의 생각 영역 */
 .artist-thoughts {
-  grid-column: 4 / 5;
-  grid-row: 1 / span 100;
-  background: #fff;
+  flex-shrink: 0;
+  width: 200px;
+  height: 500px;
+  background: #000000;
   padding: 20px;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: #333;
-  position: sticky;
-  top: 20px;
-  height: fit-content;
+  color: #ffffff;
+  top: 20px; /* ← 이거 필수 */
+  align-self: flex-start;
+  margin-left: auto; /* ← 오른쪽으로 밀기 */
 }
+
 
 .artist-thoughts h3 {
   margin-top: 0;
   font-size: 1.1rem;
   color: #213940;
-}
-
-/* 이미지 크기 조절용 클래스 */
-.item-tall {
-  grid-row: span 2;
-}
-
-.item-wide {
-  grid-column: span 2;
 }
