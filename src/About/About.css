@@ -11,7 +11,7 @@
   background-color: #fff;
   max-width: 1100px;
   margin: 0 auto;
-  font-family: "Helvetica Neue", sans-serif
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .divider {
@@ -26,11 +26,14 @@
   margin: 2rem 0;
   margin-bottom: 100px;
 }
+
+/* 컨테이너 */
 .cv-container {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
 }
+
 .cv-left {
   flex: 1;
   min-width: 180px;
@@ -38,6 +41,7 @@
   flex-shrink: 0;
   text-align: left;
 }
+
 .cv-left h2,
 .cv-left h3 {
   font-size: 1.5rem;
@@ -45,6 +49,7 @@
   color: #444;
   margin-bottom: 2rem;
 }
+
 .cv-right {
   flex: 4;
   display: flex;
@@ -62,16 +67,15 @@
 }
 
 /* Education 항목 별 간격 커스터마이징 */
-/* 1~3번째 아이템은 촘촘하게 붙이기 */
 .cv-container.education .cv-right .cv-item:nth-child(-n+3) {
   row-gap: 0;
   padding-bottom: 0.2rem;
 }
-/* 3번째 아이템(Neugebauer)을 좀 더 위로 당기기 */
+
 .cv-container.education .cv-right .cv-item:nth-child(3) {
   margin-top: -0.9rem;
 }
-/* 4번째 아이템 앞에만 마진 주기 */
+
 .cv-container.education .cv-right .cv-item:nth-child(4) {
   margin-top: 1rem;
 }
@@ -84,8 +88,7 @@
   overflow: visible;
   margin-left: 3px;
   text-align: left;
-      margin-top: 30px;
-
+  margin-top: 30px;
 }
 
 /* subtitle */
@@ -94,8 +97,7 @@
   grid-column: 1 / 2;
   grid-row: 2;
   margin: 0.2rem 0;
-    text-align: left;
-
+  text-align: left;
 }
 
 /* location */
@@ -119,9 +121,13 @@
   margin-top: 27px;
 }
 
-
 /* 반응형 - 모바일 대응 */
 @media (max-width: 768px) {
+  .cv-main {
+    text-align: right;        
+    margin-bottom: 2rem;
+  }
+
   .cv-container {
     flex-direction: column;
   }
@@ -129,7 +135,8 @@
   .cv-left {
     width: 100%;
     min-width: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem;    
+
   }
 
   .cv-right {
