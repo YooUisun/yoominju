@@ -18,7 +18,7 @@ const Main = () => {
     if (!container || !magnifier) return;
 
     const zoom = 2; // 확대 배율
-    const imgSrc = "/yoominju/img/MainBackground2.webp";
+    const imgSrc = "/yoominju/img/MainBackground.webp";
 
     // 돋보기 배경 이미지 설정
     magnifier.style.backgroundImage = `url(${imgSrc})`;
@@ -83,7 +83,7 @@ const Main = () => {
       className="main-container"
       onClick={handleClick}
       style={{
-        backgroundImage: `url('/yoominju/img/MainBackground2.webp')`,
+        backgroundImage: `url('/yoominju/img/MainBackground.webp')`,
       }}
     >
       <div

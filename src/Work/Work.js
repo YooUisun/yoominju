@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Work.css';
 
 const images = [
-  { src: '/img/Sample.webp', title: '민주의 여행', year: '2024', location: 'Seoul' },
+  { src: '/img/WorksMain/18.webp', title: '18', year: '2024', location: 'Seoul' },
   { src: '/img/Sample2.jpg', title: '의선의 여행', year: '2023', location: 'Busan' },
   // 추가 시 여기에만 객체를 늘리면 됩니다.
 ];

@@ -8,9 +8,9 @@ const newsItem = {
   title: "Rundgang",
   date: "July 18 – July 20, 2025",
   images: [
-    "/img/Exhibition1.webp",
-    "/img/Exhibition2.webp",
-    "/img/Exhibition3.webp",
+    "/img/News/Exhibition1.webp",
+    "/img//News/Exhibition2.webp",
+    "/img/News/Exhibition3.webp",
   ],
 };
 
@@ -19,7 +19,7 @@ export default function News() {
     <section id="about" className="about-section">
       <h2 className="exhibition-label">News</h2>
 
-      {/* 🔥 이미지 3개 가로 배치 */}
+      {/* 이미지 3개 가로 배치 */}
       <div className="exhibition-row">
         {newsItem.images.map((img, index) => (
           <Link
@@ -35,7 +35,7 @@ export default function News() {
         ))}
       </div>
 
-      {/* 🔥 제목과 날짜는 아래 한 번만 */}
+      {/* 제목과 날짜는 아래 한 번만 */}
       <h3 className="exhibition-title">{newsItem.title}</h3>
       <p className="exhibition-date">{newsItem.date}</p>
     </section>
