@@ -16,7 +16,7 @@ import "./App.css";
 
 export default function App() {
   const location = useLocation();
-  const isMainPage = location.pathname === "/yoominju";
+  const isMainPage = location.pathname.replace(/\/$/, "") === "/yoominju";
 
   return (
     <>
