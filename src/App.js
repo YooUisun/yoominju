@@ -19,7 +19,7 @@ export default function App() {
   const isMainPage = location.pathname.replace(/\/$/, "") === "/yoominju";
 
   return (
-    <>
+    <div className="app-container"> {/* 이거 추가 */}
       {!isMainPage && <NavBar />}
       <Routes>
         <Route path="/yoominju" element={<Main />} />
@@ -30,6 +30,6 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       {!isMainPage && <Footer />}
-    </>
+    </div>
   );
 }

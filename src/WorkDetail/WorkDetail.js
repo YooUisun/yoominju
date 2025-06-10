@@ -20,7 +20,7 @@ const workData = [
   },
   {
     id: 2,
-    title: "의선의 여행",
+    title: "Words",
     year: "2023",
     location: "Busan",
     gallery: [
