@@ -50,11 +50,17 @@
   color: #213940;
   margin: 0;
 }
+.caption-line {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* title과 year 사이 간격 */
+}
 
 .caption-info {
-  font-size: 0.8rem;
-  color: #666;
-  margin: 2px 0 0 0;
+  font-size: 0.9rem;
+  color: #213940;
+  margin: 0;
+  font-weight: bold;
 }
 
 .work-link {

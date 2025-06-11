@@ -6,7 +6,7 @@
   flex-wrap: nowrap;         /* ❗줄바꿈 금지 */
   padding: 3rem;
   margin-top: 17%;
-  gap: 50rem;
+  gap: 40rem;
   overflow-x: auto;          /* ❗가로 스크롤 허용 */
   white-space: nowrap;
   min-width: 800px;

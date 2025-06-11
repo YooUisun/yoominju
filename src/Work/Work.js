@@ -12,21 +12,18 @@ const workData = [
     src: "/img/WorksMain/18.webp",
     title: "18",
     year: "2024",
-    location: "",
   },
   {
     id: 2,
     src: "/img/WorksMain/Words.webp",
     title: "Words",
     year: "2023",
-    location: "Korea",
   },
   {
     id: 3,
     src: "/img/WorksMain/Words.webp",
     title: "Words",
     year: "2023",
-    location: "Korea",
   },
 
   // 더 추가 가능
@@ -34,15 +31,14 @@ const workData = [
 
 const layout = [
   { i: "1", x: 0, y: 0, w: 4, h: 8 },
-  { i: "2", x: 3, y: 0, w: 4, h: 10 },
+  { i: "2", x: 1, y: 0, w: 4, h: 10 },
   { i: "3", x: 8, y: 0, w: 2, h: 10 },
 ];
-  // 좌표 자유롭게 수정 가능
-  //x = 가로위치 열 번호 몇 번째 열 에 배치할지지
-  //y = 세로위치 행 번호 몇 번째 줄 에 넣을지
-  //w = 가로위치 너비 몇 칸 차지할지
-  //h = 세로위치 너비 몇 칸 차지할지
-
+// 좌표 자유롭게 수정 가능
+//x = 가로위치 열 번호 몇 번째 열 에 배치할지지
+//y = 세로위치 행 번호 몇 번째 줄 에 넣을지
+//w = 가로위치 너비 몇 칸 차지할지
+//h = 세로위치 너비 몇 칸 차지할지
 
 export default function Work() {
   return (
@@ -67,9 +63,9 @@ export default function Work() {
                   className="thumb"
                 />
                 <div className="caption">
-                  <div className="caption-title">{item.title}</div>
-                  <div className="caption-info">
-                    {item.year} | {item.location}
+                  <div className="caption-line">
+                    <div className="caption-title">{item.title},</div>
+                    <div className="caption-info"> {item.year}</div>
                   </div>
                 </div>
               </Link>

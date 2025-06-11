@@ -20,15 +20,23 @@
 }
 
 .detail-title {
-  margin: 0;
-  font-size: 2rem;
+  margin-top: 51px;
+  font-size: 1.5rem;
   color: #213940;
+  position:relative;
+  left: 50%; /* 가로 가운데 */
+  transform: translate(-1%, -50%); /* 💥 왼쪽에서 조금 더 오른쪽으로 */
+  font-weight: 300;
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 .detail-meta {
-  margin: 4px 0 0;
+  position: relative;
+  left: 50%;
+  transform: translate(-1%, -50%);
   font-size: 0.9rem;
   color: #666;
+  margin-bottom: 85px;
 }
 
 .detail-main-image img {
@@ -36,7 +44,7 @@
   height: auto;
   object-fit: cover;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
@@ -57,7 +65,7 @@
   width: 100%;
   max-width: 800px;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .detail-description {

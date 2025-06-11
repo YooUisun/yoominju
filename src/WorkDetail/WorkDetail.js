@@ -1,6 +1,6 @@
 // src/Work/WorkDetail.js
 import React from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom"; // Link 제거
 import "./WorkDetail.css";
 
 const workData = [
@@ -8,21 +8,19 @@ const workData = [
     id: 1,
     title: "18",
     year: "2024",
-    location: "Seoul",
     gallery: [
-      { src: "/img/18SubPic/1.webp", text: "작품 설명 1." },
-      { src: "/img/18SubPic/2.webp", text: "작품 설명 2." },
-      { src: "/img/18SubPic/3.webp", text: "작품 설명 3." },
-      { src: "/img/18SubPic/4.webp", text: "작품 설명 4." },
-      { src: "/img/18SubPic/5.webp", text: "작품 설명 5." },
-      { src: "/img/18SubPic/7.webp", text: "작품 설명 6." },
+      { src: "/img/18SubPic/1.webp"},
+      { src: "/img/18SubPic/2.webp"},
+      { src: "/img/18SubPic/3.webp"},
+      { src: "/img/18SubPic/4.webp"},
+      { src: "/img/18SubPic/5.webp"},
+      { src: "/img/18SubPic/7.webp"},
     ],
   },
   {
     id: 2,
     title: "Words",
     year: "2023",
-    location: "Busan",
     gallery: [
       { src: "/img/Sample2_detail1.jpg", text: "ID 2 작품 설명 1입니다." },
       { src: "/img/Sample2_detail2.jpg", text: "ID 2작품 설명 2입니다." },
@@ -38,9 +36,6 @@ export default function WorkDetail() {
   if (!item) {
     return (
       <div className="detail-wrapper">
-        <Link to="/work" className="back-link">
-          ← Back to Works
-        </Link>
         <p>작품을 찾을 수 없습니다.</p>
       </div>
     );
@@ -48,13 +43,10 @@ export default function WorkDetail() {
 
   return (
     <div className="detail-wrapper">
-      <Link to="/work" className="back-link">
-        ← Back to Works
-      </Link>
       <div className="detail-header">
         <h2 className="detail-title">{item.title}</h2>
         <p className="detail-meta">
-          {item.year} | {item.location}
+          {item.year} {item.location}
         </p>
       </div>
 

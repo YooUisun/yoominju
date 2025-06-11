@@ -19,16 +19,18 @@ export default function App() {
   const isMainPage = location.pathname.replace(/\/$/, "") === "/yoominju";
 
   return (
-    <div className="app-container"> {/* 이거 추가 */}
+    <div className="app-container">
       {!isMainPage && <NavBar />}
-      <Routes>
-        <Route path="/yoominju" element={<Main />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/work/:id" element={<WorkDetail />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className="routes-wrapper"> {/* 🔥 flex:1 영역 */}
+        <Routes>
+          <Route path="/yoominju" element={<Main />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/work/:id" element={<WorkDetail />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
       {!isMainPage && <Footer />}
     </div>
   );
