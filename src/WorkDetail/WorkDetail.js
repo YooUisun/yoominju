@@ -1,20 +1,20 @@
 // src/Work/WorkDetail.js
 import React from "react";
-import { useParams } from "react-router-dom"; // Link 제거
+import { useParams } from "react-router-dom";
 import "./WorkDetail.css";
 
 const workData = [
   {
     id: 1,
-    title: "18",
+    title: "Schritte²",
     year: "2024",
     gallery: [
-      { src: "/img/18SubPic/1.webp"},
-      { src: "/img/18SubPic/2.webp"},
-      { src: "/img/18SubPic/3.webp"},
-      { src: "/img/18SubPic/4.webp"},
-      { src: "/img/18SubPic/5.webp"},
-      { src: "/img/18SubPic/7.webp"},
+      { src: "/img/Schritte²/1.MOV" },
+      { src: "/img/Schritte²/2.webp" },
+      { src: "/img/Schritte²/3.webp" },
+      { src: "/img/Schritte²/4.webp" },
+      { src: "/img/Schritte²/5.MOV" },
+      { src: "/img/Schritte²/6.webp" }
     ],
   },
   {
@@ -33,14 +33,6 @@ export default function WorkDetail() {
   const { id } = useParams();
   const item = workData.find((w) => w.id === parseInt(id, 10));
 
-  if (!item) {
-    return (
-      <div className="detail-wrapper">
-        <p>작품을 찾을 수 없습니다.</p>
-      </div>
-    );
-  }
-
   return (
     <div className="detail-wrapper">
       <div className="detail-header">
@@ -54,10 +46,21 @@ export default function WorkDetail() {
         {item.gallery.map((entry, idx) => (
           <div key={idx} className="detail-block">
             <div className="detail-thumb">
-              <img
-                src={process.env.PUBLIC_URL + entry.src}
-                alt={`${item.title} detail ${idx + 1}`}
-              />
+              {entry.src.toLowerCase().endsWith(".mov") ||
+              entry.src.toLowerCase().endsWith(".mp4") ? (
+                <video controls width="100%">
+                  <source
+                    src={process.env.PUBLIC_URL + entry.src}
+                    type="video/mp4"
+                  />
+                  브라우저가 video 태그를 지원하지 않습니다.
+                </video>
+              ) : (
+                <img
+                  src={process.env.PUBLIC_URL + entry.src}
+                  alt={`${item.title} detail ${idx + 1}`}
+                />
+              )}
             </div>
             <div className="detail-description">
               <p>{entry.text}</p>

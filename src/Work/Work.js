@@ -9,22 +9,11 @@ import "./Work.css";
 const workData = [
   {
     id: 1,
-    src: "/img/WorksMain/18.webp",
-    title: "18",
+    src: "/img/WorksMain/Schritte².webp",
+    title: "Schritte²",
     year: "2024",
   },
-  {
-    id: 2,
-    src: "/img/WorksMain/Words.webp",
-    title: "Words",
-    year: "2023",
-  },
-  {
-    id: 3,
-    src: "/img/WorksMain/Words.webp",
-    title: "Words",
-    year: "2023",
-  },
+
 
   // 더 추가 가능
 ];
