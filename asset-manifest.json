@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/yoominju/static/css/main.ea769b8f.css",
-    "main.js": "/yoominju/static/js/main.30556447.js",
+    "main.css": "/yoominju/static/css/main.24a502d9.css",
+    "main.js": "/yoominju/static/js/main.8c6aad41.js",
     "index.html": "/yoominju/index.html",
-    "main.ea769b8f.css.map": "/yoominju/static/css/main.ea769b8f.css.map",
-    "main.30556447.js.map": "/yoominju/static/js/main.30556447.js.map"
+    "main.24a502d9.css.map": "/yoominju/static/css/main.24a502d9.css.map",
+    "main.8c6aad41.js.map": "/yoominju/static/js/main.8c6aad41.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea769b8f.css",
-    "static/js/main.30556447.js"
+    "static/css/main.24a502d9.css",
+    "static/js/main.8c6aad41.js"
   ]
 }
