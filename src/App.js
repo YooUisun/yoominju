@@ -1,4 +1,3 @@
-// src/App.js
 import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
@@ -18,10 +17,13 @@ export default function App() {
   const location = useLocation();
   const isMainPage = location.pathname.replace(/\/$/, "") === "/yoominju";
 
+  // 오직 정확히 /work 경로일 때만 true (WorkDetail 포함 안함)
+  const isExactWorkPage = location.pathname === "/work";
+
   return (
-    <div className="app-container">
+    <div className={`app-container ${isExactWorkPage ? "work-min-height" : ""}`}>
       {!isMainPage && <NavBar />}
-      <div className="routes-wrapper"> {/* 🔥 flex:1 영역 */}
+      <div className="routes-wrapper">
         <Routes>
           <Route path="/yoominju" element={<Main />} />
           <Route path="/work" element={<Work />} />

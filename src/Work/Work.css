@@ -1,66 +1,76 @@
 /* 전체 컨테이너 */
 .work-container {
   display: flex;
-  flex-direction: column; /* 세로 정렬로 변경 */
+  flex-direction: column;
   min-height: 100vh;
   padding: 20px;
-  max-width: 2000px;
+  max-width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 /* 콘텐츠 영역 */
 .work-content {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 20px;
   flex: 1;
   align-items: flex-start;
 }
 
+.caption-title {
+  white-space: pre-wrap;
+  word-break: break-word;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  color: #000000;
+  margin: 0;
+}
+
 /* Masonry 그리드 */
 .my-masonry-grid {
   display: flex;
-  width: 100%;
-  gap: 30px;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
 }
 .my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
   background-clip: padding-box;
-}
-
-/* 각 이미지 항목 */
-.work-item {
-  margin-bottom: 16px;
 }
 
 .thumb {
   width: 100%;
   height: auto;
-  object-fit: cover;
   display: block;
-  border-radius: 8px;
-  margin-bottom: 4px;
+  object-fit: cover;
+}
+.work-grid-item {
+  margin-bottom: 30px;
 }
 
 .caption {
   text-align: left;
 }
 
-.caption-title {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #213940;
-  margin: 0;
-}
-.caption-line {
+.caption-line-last {
   display: flex;
-  align-items: center;
-  gap: 8px; /* title과 year 사이 간격 */
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.caption-year-inline {
+  font-size: 0.95rem;
+  white-space: nowrap;
+  margin-left: 8px;
+  color: #000000;
 }
 
 .caption-info {
   font-size: 0.9rem;
-  color: #213940;
+  color: #000000;
   margin: 0;
-  font-weight: bold;
 }
 
 .work-link {
@@ -69,28 +79,44 @@
   display: block;
 }
 
-/* 작가의 생각 영역 */
-.artist-thoughts {
-  flex-shrink: 0;
-  width: 200px;
-  height: 300px;
-  background: #000000;
-  padding: 20px;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #ffffff;
-  position: sticky;
-  top: 20px;
-  align-self: flex-start;
-  margin-left: auto;
-}
-
-.artist-thoughts h3 {
-  margin-top: 0;
-  font-size: 1.1rem;
-  color: #213940;
-}
-
 .footer {
   margin-top: auto;
+}
+
+/* 반응형 추가 */
+@media (max-width: 1200px) {
+  .work-content {
+    flex-direction: column;
+  }
+
+  .artist-thoughts {
+    position: relative;
+    top: auto;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .caption-title {
+    font-size: 0.85rem;
+  }
+  .caption-year-inline,
+  .caption-info {
+    font-size: 0.85rem;
+  }
+  .artist-thoughts {
+    font-size: 0.85rem;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-container {
+    padding: 10px;
+  }
+  .artist-thoughts h3 {
+    font-size: 1rem;
+  }
 }

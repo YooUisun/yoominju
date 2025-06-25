@@ -8,10 +8,14 @@ html, body {
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; /* 화면 높이만큼 */
+}
+
+.app-container.work-min-height {
+  min-height: 300vh; /* /work 페이지일 때만 적용 */
 }
 
 .routes-wrapper {
   flex: 1;
-  overflow-y: auto; /* 🔥 내부 스크롤 허용 */
+  overflow-y: auto;
 }
