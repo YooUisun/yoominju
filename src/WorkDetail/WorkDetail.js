@@ -53,7 +53,7 @@ const workData = [
     year: "2024",
     gallery: [
       {
-        src: "/img/For all the circles that hold me, for my circles that will hold you/1.mp4",
+        // src: "/img/For all the circles that hold me, for my circles that will hold you/1.mp4", // 용량 초과로 나중에 넣을 예정
       },
       {
         src: "/img/For all the circles that hold me, for my circles that will hold you/2.webp",
