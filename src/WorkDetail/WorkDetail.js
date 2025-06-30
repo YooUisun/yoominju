@@ -260,14 +260,14 @@ const workData = [
   },
   {
     id: 16,
-    title: "alles in butter",
+    title: "alles in Butter",
     year: "2020",
     gallery: [
-      { src: "/img/alles in butter/1.mp4" },
-      { src: "/img/alles in butter/2.webp" },
-      { src: "/img/alles in butter/3.webp" },
-      { src: "/img/alles in butter/4.webp" },
-      { src: "/img/alles in butter/5.webp" },
+      { src: "/img/alles in Butter/1.mp4" },
+      { src: "/img/alles in Butter/2.webp" },
+      { src: "/img/alles in Butter/3.webp" },
+      { src: "/img/alles in Butter/4.webp" },
+      { src: "/img/alles in Butter/5.webp" },
     ],
   },
   {
