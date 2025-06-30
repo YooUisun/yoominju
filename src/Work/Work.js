@@ -102,8 +102,8 @@ const workData = [
   },
   {
     id: 16,
-    src: "/img/WorksMain/alles in butter.webp",
-    title: "alles in butter",
+    src: "/img/WorksMain/alles in Butter.webp",
+    title: "alles in Butter",
     year: "2020",
   },
   {
