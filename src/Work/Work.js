@@ -136,6 +136,55 @@ const workData = [
     title: "die Pandemie_11zon",
     year: "2019",
   },
+
+  {
+    id: 22,
+    src: "/img/WorksMain/der Raum.webp",
+    title: "der Raum",
+    year: "2019",
+  },
+  {
+    id: 23,
+    src: "/img/WorksMain/das Hinterhaus.webp",
+    title: "das Hinterhaus",
+    year: "2019",
+  },
+  {
+    id: 24,
+    src: "/img/WorksMain/alles okay.webp",
+    title: "Alles okay",
+    year: "2017",
+  },
+  {
+    id: 25,
+    src: "/img/WorksMain/0-200.webp",
+    title: "0-200",
+    year: "2017",
+  },
+  {
+    id: 26,
+    src: "/img/WorksMain/Sa Jin Gwan.webp",
+    title: "Sa Jin Gwan",
+    year: "2014",
+  },
+  {
+    id: 27,
+    src: "/img/WorksMain/ASYAAF.webp",
+    title: "ASYAAF",
+    year: "2014",
+  },
+  {
+    id: 28,
+    src: "/img/WorksMain/The 7th Daum Junior Photography Festival.webp",
+    title: "The 7th Daum Junior Photography Festival",
+    year: "2013",
+  },
+  {
+    id: 29,
+    src: "/img/WorksMain/열아홉(18).webp",
+    title: "열아홉(18)",
+    year: "2013",
+  },
 ];
 const layouts = {
   lg: [
@@ -157,36 +206,68 @@ const layouts = {
     { i: "13", x: 5, y: 28, w: 2, h: 10 }, // True happiness
     { i: "14", x: 9, y: 29, w: 3, h: 20 }, // die Spuren des Tages
 
-// 세 번째 줄 (두 번째 줄 아래에 자연스럽게 이어짐)
-{ i: "15", x: 0, y: 49, w: 2, h: 10 }, // Butter Butter Projekt, 2020
-{ i: "16", x: 1, y: 59, w: 3, h: 10 }, // Alles in Butter, 2020
-{ i: "19", x: 4, y: 59, w: 2, h: 10 }, // 폭발 II, 2019
-{ i: "20", x: 7, y: 59, w: 2, h: 10 }, // 폭발, 2019
-{ i: "17", x: 4, y: 49, w: 3, h: 10 }, // Sleeping Promises, 2022
-{ i: "18", x: 8, y: 49, w: 4, h: 10 }, // Der Tag, 2022
-{ i: "21", x: 10, y: 59, w: 2, h: 10 }, // Die Pandemie, 2019
-  ],
-  md: [
-    //보통 노트북,태블릿 가로
-    { i: "1", x: 0, y: 0, w: 6, h: 3 },
-    { i: "2", x: 6, y: 0, w: 6, h: 3 },
-    { i: "3", x: 0, y: 3, w: 6, h: 4 },
-    { i: "4", x: 6, y: 3, w: 6, h: 3 },
-    { i: "5", x: 0, y: 7, w: 12, h: 5 },
-    { i: "6", x: 0, y: 12, w: 6, h: 2 },
-    { i: "7", x: 6, y: 12, w: 6, h: 3 },
-    { i: "8", x: 0, y: 15, w: 12, h: 3 },
+    // 세 번째 줄
+    { i: "15", x: 0, y: 49, w: 2, h: 15 }, // Butter Butter Projekt, 2020
+    { i: "16", x: 1, y: 59, w: 3, h: 15 }, // Alles in Butter, 2020
+    { i: "17", x: 4, y: 49, w: 3, h: 15 }, // Sleeping Promises, 2022
+    { i: "18", x: 8, y: 49, w: 4, h: 15 }, // Der Tag, 2022
+    { i: "19", x: 4, y: 59, w: 2, h: 15 }, // 폭발 II, 2019
+    { i: "20", x: 7, y: 59, w: 2, h: 15 }, // 폭발, 2019
+    { i: "21", x: 10, y: 59, w: 2, h: 17 }, // Die Pandemie, 2019
+
+    // 네 번째 줄
+    { i: "22", x: 0, y: 70, w: 4, h: 17 }, // Der Raum
+    { i: "23", x: 4, y: 70, w: 3, h: 10 }, // Das Hinterhaus
+    { i: "24", x: 5, y: 88, w: 3, h: 10 }, // Alles Okay (Das Hinterhaus 아래 살짝 오른쪽)
+
+    { i: "25", x: 11, y: 70, w: 2, h: 18 }, // 0-200 (그대로)
+
+    // 다섯 번째 줄 (Alles Okay 아래)
+    { i: "26", x: 1, y: 100, w: 3, h: 0 }, // Sa Jin Kwan (위치 유지)
+    { i: "27", x: 5, y: 98, w: 1, h: 10 }, // ASYAAF (Alles Okay 아래 살짝 왼쪽)
+    { i: "28", x: 6, y: 98, w: 1, h: 10 }, // Daum Festival (ASYAAF 바로 오른쪽)
+    { i: "29", x: 9, y: 98, w: 3, h: 10 }, // 열아홉(18) (Daum Festival 오른쪽)
   ],
   sm: [
-    //태블릿 세로, 작은 노트북 << 이걸 핸드폰으로 쓰면 될 듯
-    { i: "1", x: 0, y: 0, w: 12, h: 3 },
-    { i: "2", x: 0, y: 3, w: 12, h: 3 },
-    { i: "3", x: 0, y: 6, w: 12, h: 3 },
-    { i: "4", x: 0, y: 9, w: 12, h: 3 },
-    { i: "5", x: 0, y: 12, w: 12, h: 3 },
-    { i: "6", x: 0, y: 15, w: 12, h: 3 },
-    { i: "7", x: 0, y: 18, w: 12, h: 3 },
-    { i: "8", x: 0, y: 21, w: 12, h: 3 },
+    { i: "1", x: 0, y: 0, w: 4, h: 10 },
+    { i: "2", x: 5, y: 2, w: 6, h: 10 },
+
+    { i: "3", x: 0, y: 10, w: 3, h: 10 },
+    { i: "4", x: 4, y: 10, w: 3, h: 10 },
+    { i: "5", x: 8, y: 10, w: 3, h: 10 },
+
+    { i: "6", x: 0, y: 20, w: 3, h: 7 },
+    { i: "7", x: 4, y: 20, w: 3, h: 7 },
+    { i: "8", x: 8, y: 20, w: 3, h: 7 },
+
+    { i: "9", x: 0, y: 30, w: 3, h: 10 },
+    { i: "10", x: 3, y: 30, w: 3, h: 10 },
+    { i: "11", x: 7, y: 30, w: 3, h: 10 },
+
+    { i: "12", x: 0, y: 40, w: 3, h: 10 },
+    { i: "13", x: 3, y: 40, w: 3, h: 10 },
+    { i: "14", x: 7, y: 40, w: 3, h: 20 },
+
+    { i: "15", x: 0, y: 50, w: 3, h: 10 },
+    { i: "16", x: 3, y: 50, w: 3, h: 10 },
+    { i: "17", x: 7, y: 50, w: 3, h: 10 },
+
+    { i: "18", x: 0, y: 60, w: 3, h: 10 },
+    { i: "19", x: 3, y: 60, w: 3, h: 10 },
+    { i: "20", x: 7, y: 60, w: 3, h: 10 },
+
+    { i: "21", x: 0, y: 70, w: 3, h: 10 },
+    { i: "22", x: 3, y: 70, w: 3, h: 10 },
+    { i: "23", x: 7, y: 70, w: 3, h: 10 },
+
+    { i: "24", x: 0, y: 80, w: 3, h: 10 },
+    { i: "25", x: 3, y: 80, w: 3, h: 10 },
+    { i: "26", x: 7, y: 80, w: 3, h: 10 },
+
+    { i: "27", x: 0, y: 90, w: 3, h: 10 },
+    { i: "28", x: 3, y: 90, w: 3, h: 10 },
+
+    { i: "29", x: 0, y: 100, w: 3, h: 0 },
   ],
 };
 
@@ -206,7 +287,7 @@ export default function Work() {
         isDraggable={false}
       >
         {workData.map((item) => {
-          const isDisabled = [19, 20, 21].includes(item.id); // 클릭 비활성화 아이디
+          const isDisabled = [19, 20, 21, 22, 23].includes(item.id); // 클릭 비활성화 아이디
 
           return (
             <div key={String(item.id)}>
