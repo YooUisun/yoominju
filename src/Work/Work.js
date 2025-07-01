@@ -151,7 +151,7 @@ const workData = [
   },
   {
     id: 24,
-    src: "/img/WorksMain/alles okay.webp",
+    src: "/img/WorksMain/Alles okay.webp",
     title: "Alles okay",
     year: "2017",
   },
