@@ -290,7 +290,78 @@ const workData = [
       { src: "/img/der Tag/4.webp" },
     ],
   },
-
+  {
+    id: 24,
+    title: "Alles Okay",
+    year: "2017",
+    gallery: [
+      { src: "/img/Alles Okay/1.webp" },
+      { src: "/img/Alles Okay/2.webp" },
+      { src: "/img/Alles Okay/3.webp" },
+      { src: "/img/Alles Okay/4.webp" },
+      { src: "/img/Alles Okay/5.webp" },
+      { src: "/img/Alles Okay/6.webp" },
+    ],
+  },
+  {
+    id: 25,
+    title: "0-200",
+    year: "2017",
+    gallery: [
+      { src: "/img/0-200/1.webp" },
+      { src: "/img/0-200/2.webp" },
+      { src: "/img/0-200/3.webp" },
+      { src: "/img/0-200/4.webp" },
+      { src: "/img/0-200/5.webp" },
+      { src: "/img/0-200/6.webp" },
+    ],
+  },
+  {
+    id: 26,
+    title: "Sa Jin Gwan",
+    year: "2014",
+    gallery: [
+      { src: "/img/Sa Jin Gwan/1.webp" },
+      { src: "/img/Sa Jin Gwan/2.webp" },
+      { src: "/img/Sa Jin Gwan/3.webp" },
+      { src: "/img/Sa Jin Gwan/4.webp" },
+      { src: "/img/Sa Jin Gwan/5.webp" },
+      { src: "/img/Sa Jin Gwan/6.webp" },
+    ],
+  },
+  {
+    id: 27,
+    title: "ASYAAF",
+    year: "2014",
+    gallery: [{ src: "/img/ASYAAF/1.webp" }, { src: "/img/ASYAAF/2.webp" }],
+  },
+  {
+    id: 28,
+    title: "The 7th Daum Junior Photography Festival",
+    year: "2013",
+    gallery: [
+      { src: "/img/The 7th Daum Junior Photography Festival/1.webp" },
+      { src: "/img/The 7th Daum Junior Photography Festival/1-1.webp" },
+      { src: "/img/The 7th Daum Junior Photography Festival/2.webp" },
+      { src: "/img/The 7th Daum Junior Photography Festival/4.webp" },
+      { src: "/img/The 7th Daum Junior Photography Festival/5.webp" },
+      { src: "/img/The 7th Daum Junior Photography Festival/6.webp" },
+    ],
+  },
+  {
+    id: 29,
+    title: "열아홉(18)",
+    year: "2013",
+    gallery: [
+      { src: "/img/열아홉/1.webp" },
+      { src: "/img/열아홉/2.webp" },
+      { src: "/img/열아홉/3.webp" },
+      { src: "/img/열아홉/4.webp" },
+      { src: "/img/열아홉/5.webp" },
+      { src: "/img/열아홉/6.webp" },
+      { src: "/img/열아홉/7.webp" },
+    ],
+  },
   // ... 나머지도 같은 형식으로 이어서 작성
 ];
 
