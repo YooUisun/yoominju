@@ -100,23 +100,16 @@
 
 @media (max-width: 768px) {
   .caption-title {
-    font-size: 0.85rem;
+    font-size: 0.75rem; /* 더 작게! */
+    line-height: 1.3;    /* 줄간격도 살짝 줄임 */
   }
   .caption-year-inline,
   .caption-info {
-    font-size: 0.85rem;
+    font-size: 0.75rem;  /* 더 작게! */
+    line-height: 1.3;
   }
   .artist-thoughts {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .work-container {
-    padding: 10px;
-  }
-  .artist-thoughts h3 {
-    font-size: 1rem;
   }
 }
