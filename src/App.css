@@ -2,20 +2,19 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-y:auto;
+  overflow-y: auto; /* 이걸로만 스크롤 관리 */
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* 화면 높이만큼 */
+  min-height: 100vh;
 }
 
 .app-container.work-min-height {
-  min-height: 320vh; /* /work 페이지일 때만 적용 */
+  min-height: 320vh;
 }
 
 .routes-wrapper {
   flex: 1;
-  overflow-y: hidden;
 }
