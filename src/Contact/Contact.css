@@ -1,15 +1,19 @@
+body {
+  overflow-x: hidden;  /* 바디 레벨에서 가로 스크롤 차단 */
+}
+
 .contact-section {
   background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;         /* ❗줄바꿈 금지 */
+  flex-wrap: nowrap;
   padding: 3rem;
   margin-top: 17%;
-  gap: 40rem;
-  overflow-x: auto;          /* ❗가로 스크롤 허용 */
-  white-space: nowrap;
-  min-width: 800px;
+  gap: 40rem;            /* ❗ 큰 간격 */
+  overflow-x: hidden;
+  white-space: nowrap;  /* ❗ 줄바꿈 금지 */
+  min-width: 800px;     /* ❗ 큰 최소 너비 */
 }
 
 .contact-info,
@@ -25,16 +29,11 @@
 .contact-section a {
   font-size: 1.2rem;
   font-weight: 300;
-  color: inherit;              /* 🔥 부모 텍스트 색상 따라가게 */
+  color: inherit;
 }
 .contact-section a:visited {
-  color: inherit;              /* 🔥 방문한 후에도 색상 유지 */
+  color: inherit;
 }
-
-.contact-section a:hover {
-  text-decoration: underline;  /* 🔥 마우스 올릴 때만 밑줄 */
-}
-
 .contact-section a:hover {
   text-decoration: underline;
 }
@@ -44,53 +43,34 @@
   margin-left: 2rem;
 }
 
-/* ✅ 모바일에서도 가로 정렬 유지 */
+/* ✅ 모바일에서 세로 정렬 + 가로 스크롤 제거 */
 @media (max-width: 768px) {
   .contact-section {
-    overflow-x: auto;
-    flex-wrap: nowrap;         /* 모바일도 줄바꿈 금지 */
-    gap: 4rem;
-    padding: 2rem;
-    min-width: 600px;          /* 조금 줄여도 되지만 고정 유지 */
-  }
-
-  .contact-info,
-  .contact-mail {
-    min-width: 200px;
-  }
-
-  .contact-info p a,
-  .contact-mail p a {
-    margin-left: 1rem;
-  }
-}
-
-/* ✅ 모바일: 세로 정렬 + 왼쪽 정렬 + 스크롤 제거 */
-@media (max-width: 768px) {
-  .contact-section {
-    flex-direction: column;        /* 🔥 세로 정렬 */
-    align-items: flex-start;       /* 🔥 왼쪽 정렬 */
-    gap: 2rem;
+    flex-direction: column;   /* 세로 정렬 */
+    align-items: flex-start;  /* 왼쪽 정렬 */
+    gap: 2rem;                /* 큰 gap 제거 */
     padding: 2rem;
     margin-top: 10%;
+    width: 80%;             
+    min-width: auto;          /* min-width 해제 */
+    white-space: normal;      /* 줄바꿈 허용 */
+    flex-wrap: wrap;          /* 필요하면 wrap */
+    overflow-x: hidden;       /* 가로 스크롤 차단 */
   }
 
   .contact-info,
   .contact-mail {
+    width: 100%;
     min-width: auto;
-    text-align: left;              /* 🔥 텍스트도 왼쪽 정렬 */
+    text-align: left;
   }
 
   .contact-info p a,
   .contact-mail p a {
-    margin-left: 2rem;           /* 🔥 여백 추가로 살짝 띄움 */
+    margin-left: 2rem;
   }
 
-  .contact-info {
-    font-size: 20px;
-    font-weight: 400;
-  }
-
+  .contact-info,
   .contact-mail {
     font-size: 20px;
     font-weight: 400;
