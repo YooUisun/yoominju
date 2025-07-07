@@ -11,7 +11,7 @@ const workData = [
     id: 1,
     src: "/img/WorksMain/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024.webp",
     title:
-      "Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin",
+      "Schritte² - \nYoung Berlin Artists– Group Exhibition at \nArt Week Berlin",
     year: "2024",
   },
   {
@@ -24,7 +24,7 @@ const workData = [
     id: 3,
     src: "/img/WorksMain/For all the circles that hold me, for my circles that will hold you.webp",
     title:
-      "나를 담는 모든 동그라미들을 위하여,너를 담을 내 동그라미들을 위하여\n(For all the circles that hold me,\nfor my circles that will hold you)",
+      "나를 담는 모든 동그라미들을 위하여,\n너를 담을 내 동그라미들을 위하여\n(For all the circles that hold me,\nfor my circles that will hold you)",
     year: "2024",
   },
   {
@@ -36,13 +36,13 @@ const workData = [
   {
     id: 5,
     src: "/img/WorksMain/Sie schweben leicht, setzen sich dann ab und werden schwer.webp",
-    title: "Sie schweben leicht, setzen sich dann ab und werden schwer",
+    title: "Sie schweben leicht, \nsetzen sich dann ab und werden schwer",
     year: "2024",
   },
   {
     id: 6,
     src: "/img/WorksMain/Cup - Sie schweben leicht, setzen sich dann ab und werden schwer.webp",
-    title: "Cup - Sie schweben leicht, setzen sich dann ab und werden schwer",
+    title: "Cup - Sie schweben leicht, \nsetzen sich dann ab und werden schwer",
     year: "2024",
   },
   {

@@ -52,9 +52,9 @@ const workData = [
       "나를 담는 모든 동그라미들을 위하여,\n너를 담을 내 동그라미들을 위하여\n(For all the circles that hold me,\nfor my circles that will hold you)",
     year: "2024",
     gallery: [
-      // {
-      //   // src: "/img/For all the circles that hold me, for my circles that will hold you/1.mp4", // 용량 초과로 나중에 넣을 예정
-      // },
+      {
+        src: "/img/For all the circles that hold me, for my circles that will hold you/1.mp4",
+      },
       {
         src: "/img/For all the circles that hold me, for my circles that will hold you/2.webp",
       },
@@ -81,7 +81,7 @@ const workData = [
     title: "1st Seoul International Fireworks Festival",
     year: "2024",
     gallery: [
-      // { src: "/img/1st Seoul International Fireworks Festival/1.mp4" }, // 동영상 추가 예정 아직 ㄴㄴ
+      { src: "/img/1st Seoul International Fireworks Festival/1.mp4" },
       { src: "/img/1st Seoul International Fireworks Festival/2.webp" },
       { src: "/img/1st Seoul International Fireworks Festival/3.webp" },
     ],
@@ -432,7 +432,7 @@ export default function WorkDetail() {
                           }
                         }}
                       >
-                        ▶️ Play
+                        ▶️
                       </button>
                       <button
                         onClick={() => {
@@ -443,9 +443,9 @@ export default function WorkDetail() {
                           }
                         }}
                       >
-                        ⏹ STOP
+                        ⏹
                       </button>
-                      <span id={`time-${idx}`}>Remaining Time: 0:00</span>
+                      <span id={`time-${idx}`}></span>
                       {languageLabel && (
                         <span
                           style={{ fontWeight: "bold", marginLeft: "10px" }}
