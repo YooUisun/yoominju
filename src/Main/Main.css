@@ -33,16 +33,18 @@ body, html {
 }
 
 @media (max-width: 500px) {
-  .main-container {
-    /* cover 대신 auto 또는 cover에 위치만 조정 */
-    background-size: cover;
-    /* 수평 위치를 왼쪽 30% 지점으로 이동 (필요에 따라 % 조절) */
-    background-position: 20% center;
+  html, body {
+    overflow: hidden;
+    height: 100%;
   }
-}
 
-@media (max-width: 500px) {
   .main-container {
+    overflow: hidden;
+    position: fixed; /* ✅ 뷰포트 고정 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: 20% center;
     filter: url(#wavy); /* ✅ 물결 효과 모바일에서만 적용 */
