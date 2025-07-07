@@ -159,8 +159,8 @@ const workData = [
     year: "2023",
     gallery: [
       { src: "/img/sch/1.webp" },
-      { src: "/img/sch/2.MP3" },
-      { src: "/img/sch/3.MP3" },
+      { src: "/img/sch/2.mp3" },
+      { src: "/img/sch/3.mp3" },
       { src: "/img/sch/4.webp" },
     ],
   },
