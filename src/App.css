@@ -12,7 +12,7 @@ html, body {
 }
 
 .app-container.work-min-height {
-  min-height: 300vh; /* /work 페이지일 때만 적용 */
+  min-height: 320vh; /* /work 페이지일 때만 적용 */
 }
 
 .routes-wrapper {
