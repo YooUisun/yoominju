@@ -1,7 +1,7 @@
 /* 공통 텍스트 스타일 */
 .about-section,
 .about-section * {
-  color: #213940;
+  color: #000000;
   font-weight: 300;
 }
 
@@ -46,7 +46,7 @@
 .cv-left h3 {
   font-size: 1.5rem;
   font-weight: 300;
-  color: #444;
+  color: #000000;
   margin-bottom: 2rem;
 }
 
