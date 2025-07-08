@@ -12,7 +12,8 @@ html, body {
 }
 
 .app-container.work-min-height {
-  min-height: 320vh;
+  min-height: 200vh;
+  max-height: 1000vh;
 }
 
 .routes-wrapper {

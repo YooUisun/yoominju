@@ -2,11 +2,12 @@
 .work-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: auto;
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  flex: 1;
 }
 
 /* 콘텐츠 영역 */

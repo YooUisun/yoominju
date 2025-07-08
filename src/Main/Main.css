@@ -18,15 +18,10 @@ body, html {
 /* 돋보기 스타일, 기존 mosaic-overlay 대신 사용 */
 .magnifier {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   pointer-events: none;
   border-radius: 50%;
-  box-shadow:
-    0 0 0 3px rgba(255, 255, 255, 0.85),
-    0 0 3px 3px rgba(0, 0, 0, 0.25);
-  background-repeat: no-repeat;
-  /* background-size, background-position은 JS에서 동적 처리 */
   transform: translate(0, 0);
   z-index: 10;
   display: none; /* 초기엔 숨김 */
