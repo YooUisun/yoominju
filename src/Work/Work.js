@@ -231,12 +231,12 @@ const layouts = {
 
   sm: [
     // 첫 번째 줄
-    { i: "1", x: 0, y: 1, w: 4.5, h: 7 }, // Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin
+    { i: "1", x: 0, y: 1, w: 4.5, h: 8 }, // Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin
     { i: "2", x: 6, y: 1.5, w: 6, h: 5 }, // Sorgenkissenl
-    { i: "3", x: 7, y: 3, w: 5, h: 9 }, // 나를 담는 모든 동그라미들을 위하여...
+    { i: "3", x: 7, y: 3, w: 5, h: 10 }, // 나를 담는 모든 동그라미들을 위하여...
     { i: "4", x: 0, y: 7.5, w: 6, h: 5 }, // 1st Seoul International Fireworks Festivalr
     { i: "5", x: 1, y: 5, w: 4, h: 8 }, // Sie schweben leicht, setzen sich dann ab und werden schwer
-    { i: "6", x: 6, y: 5, w: 6, h: 5 }, // Cup - Sie schweben leicht, setzen sich dann ab und werden schwer
+    { i: "6", x: 6, y: 5, w: 6, h: 7 }, // Cup - Sie schweben leicht, setzen sich dann ab und werden schwer
     { i: "7", x: 0, y: 13, w: 5, h: 5 }, // Joyfulling waiting 13 Crackle by 1, 2
     { i: "8", x: 9, y: 13, w: 6, h: 6 }, // 1, 2
 
@@ -245,13 +245,13 @@ const layouts = {
     { i: "10", x: 7, y: 15, w: 6, h: 5 }, // sch
     { i: "11", x: 7, y: 15.5, w: 5, h: 7 }, // Inneres
     { i: "12", x: 1, y: 15.5, w: 5, h: 4 }, // Re:Fusion
-    { i: "13", x: 9, y: 20, w: 5, h: 5 }, // True happiness
+    { i: "13", x: 9, y: 20, w: 5, h: 6 }, // True happiness
     { i: "14", x: 0, y: 19, w: 7, h: 9 }, // die Spuren des Tages
 
     // 세 번째 줄
     { i: "15", x: 4, y: 40, w: 8, h: 9 }, // Butter Butter Projekt, 2020
     { i: "16", x: 0, y: 32, w: 8, h: 5 }, // Alles in Butter, 2020
-    { i: "17", x: 8, y: 25, w: 5, h: 3 }, // Sleeping Promises, 2022
+    { i: "17", x: 8, y: 25, w: 5, h: 5 }, // Sleeping Promises, 2022
     { i: "18", x: 6, y: 32, w: 6, h: 5 }, // Der Tag, 2022
     { i: "19", x: 0, y: 60, w: 2.5, h: 4 }, // 폭발 II, 2019
     { i: "20", x: 3, y: 60, w: 2.5, h: 3 }, // 폭발, 2019
@@ -266,8 +266,8 @@ const layouts = {
     // 다섯 번째 줄
     { i: "26", x: 6, y: 80, w: 7, h: 5 }, // Sa Jin Kwan 
     { i: "27", x: 0, y: 80, w: 4, h: 1 }, // ASYAAF 
-    { i: "28", x: 5, y: 80, w: 4, h: 6 }, // Daum Festival
-    { i: "29", x: 9, y: 80, w: 6, h: 1 }, // 열아홉(18)
+    { i: "28", x: 5, y: 80, w: 4, h: 7 }, // Daum Festival
+    { i: "29", x: 1, y: 80, w: 6, h: 1 }, // 열아홉(18)
   ],
 };
 

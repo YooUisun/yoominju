@@ -93,8 +93,9 @@
 
 @media (max-width: 768px) {
   .caption-title {
-    font-size: 0.75rem; /* 더 작게! */
-    line-height: 1.3;    /* 줄간격도 살짝 줄임 */
+    font-size: 0.9rem; /* 더 작게! */
+    line-height: 1.4;    /* 줄간격도 살짝 줄임 */
+
   }
   .caption-year-inline,
   .caption-info {
