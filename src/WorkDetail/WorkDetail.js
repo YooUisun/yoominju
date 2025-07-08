@@ -7,7 +7,7 @@ const workData = [
   {
     id: 1,
     title:
-      "Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin",
+      "Schritte² - Young Berlin Artists \nGroup Exhibition at Art Week Berlin",
     year: "2024",
     gallery: [
       {
@@ -49,7 +49,7 @@ const workData = [
   {
     id: 3,
     title:
-      "나를 담는 모든 동그라미들을 위하여,\n너를 담을 내 동그라미들을 위하여\n(For all the circles that hold me,\nfor my circles that will hold you)",
+      "나를 담는 모든 동그라미들을 위하여, 너를 담을 내 동그라미들을 위하여\nFor all the circles that hold me, for my circles that will hold you",
     year: "2024",
     gallery: [
       {
@@ -89,7 +89,7 @@ const workData = [
   {
     id: 5,
     title:
-      "Peoples - Sie schweben leicht, setzen sich dann ab und werden schwer",
+      "Peoples : Sie schweben leicht, setzen sich dann ab und werden schwer",
     year: "2024",
     gallery: [
       { src: "/img/ppl/1.webp" },
@@ -104,7 +104,8 @@ const workData = [
   },
   {
     id: 6,
-    title: "Cup - Sie schweben leicht, setzen sich dann ab und werden schwer",
+    title:
+      "Object : Sie schweben leicht, setzen sich dann ab und werden schwer",
     year: "2024",
     gallery: [
       { src: "/img/cup/1.webp" },
@@ -135,10 +136,10 @@ const workData = [
     gallery: [
       { src: "/img/1,2/1.webp" },
       { src: "/img/1,2/2.webp" },
-      { src: "/img/1,2/3.webp" },
-      { src: "/img/1,2/4.webp" },
-      { src: "/img/1,2/5.webp" },
-      { src: "/img/1,2/6.webp" },
+      { src: "/img/1,2/3.webp", caption: "© Julian Blum" },
+      { src: "/img/1,2/4.webp", caption: "© Julian Blum" },
+      { src: "/img/1,2/5.webp", caption: "© Julian Blum" },
+      { src: "/img/1,2/6.webp", caption: "© Julian Blum" },
       { src: "/img/1,2/7.webp" },
       { src: "/img/1,2/8.webp" },
       { src: "/img/1,2/9.webp" },
@@ -197,7 +198,7 @@ const workData = [
   },
   {
     id: 13,
-    title: "진정한 행복 (True happiness)",
+    title: "진정한 행복 \nTrue happiness\nwahres Glück",
     year: "2022",
     gallery: [
       { src: "/img/True happiness/1.mp3" },
@@ -251,7 +252,7 @@ const workData = [
   },
   {
     id: 15,
-    title: "Butterbutterprojekt",
+    title: "Butterbutter projekt",
     year: "2020",
     gallery: [
       { src: "/img/Butterbutterprojekt/1.webp" },
@@ -260,7 +261,7 @@ const workData = [
   },
   {
     id: 16,
-    title: "alles in Butter",
+    title: "Alles in Butter",
     year: "2020",
     gallery: [
       { src: "/img/alles in Butter/1.mp4" },
@@ -289,6 +290,36 @@ const workData = [
       { src: "/img/der Tag/3.webp" },
       { src: "/img/der Tag/4.webp" },
     ],
+  },
+  {
+    id: 19,
+    title: "폭발 II",
+    year: "2019",
+    gallery: [{ src: "/img/boom2/1.webp" }],
+  },
+  {
+    id: 20,
+    title: "폭발",
+    year: "2019",
+    gallery: [{ src: "/img/boom/1.webp" }],
+  },
+  {
+    id: 21,
+    title: "die Pandemie",
+    year: "2019",
+    gallery: [{ src: "/img/die Pandemie/1.webp" }],
+  },
+  {
+    id: 22,
+    title: "der Raum",
+    year: "2019",
+    gallery: [{ src: "/img/der Raum/1.webp" }],
+  },
+    {
+    id: 23,
+    title: "das Hinterhaus",
+    year: "2019",
+    gallery: [{ src: "/img/das Hinterhaus/1.webp" }],
   },
   {
     id: 24,
@@ -350,7 +381,7 @@ const workData = [
   },
   {
     id: 29,
-    title: "열아홉(18)",
+    title: "열아홉\n18",
     year: "2013",
     gallery: [
       { src: "/img/열아홉/1.webp" },
@@ -368,6 +399,8 @@ const workData = [
 export default function WorkDetail() {
   const { id } = useParams();
   const item = workData.find((w) => w.id === parseInt(id, 10));
+
+  if (!item) return <div>작업을 찾을 수 없습니다.</div>;
 
   return (
     <div className="detail-wrapper">
@@ -394,11 +427,9 @@ export default function WorkDetail() {
           let languageLabel = "";
 
           if (item.id === 10) {
-            // 기존 10번 id sch - 2.MP3: Korean, 3.MP3: German
             if (entry.src.includes("2.MP3")) languageLabel = "Korean";
             if (entry.src.includes("3.MP3")) languageLabel = "German";
           } else if (item.id === 13) {
-            // 13번 진정한 행복 1,2,3번 오디오에 언어 표시
             if (idx === 0) languageLabel = "Korean";
             else if (idx === 1) languageLabel = "English";
             else if (idx === 2) languageLabel = "German";
@@ -482,8 +513,10 @@ export default function WorkDetail() {
                   />
                 )}
               </div>
+
               <div className="detail-description">
-                <p>{entry.text}</p>
+                {/* caption 있을 때만 보여줌 */}
+                {entry.caption && <p>{entry.caption}</p>}
               </div>
             </div>
           );

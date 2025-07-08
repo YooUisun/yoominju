@@ -5,8 +5,7 @@
   padding: 30px 20px;
   font-family: sans-serif;
   color: #333;
-    overflow-x: hidden; /* 💥 추가 */
-
+  overflow-x: hidden; /* 💥 추가 */
 }
 
 .back-link {
@@ -23,8 +22,8 @@
 
 .detail-title {
   margin-top: 51px;
-  font-size: 1.5rem;
-  color: #213940;
+  font-size: 1.2rem;
+  color: #000000;
   font-weight: 300;
   font-family: "Helvetica Neue", sans-serif;
   display: inline-block; /* 💥 optional, 글자 줄바꿈 방지용 */
@@ -41,8 +40,6 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
 }
 
@@ -57,19 +54,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+    gap: 0; /* 💥 gap 완전 제거 */
+
 }
 
 .detail-thumb img {
   width: 100%;
   max-width: 800px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 0; /* 💥 margin-bottom까지 0으로! */
+  display: block; /* 💥 이미지 인라인 간격 방지 */
 }
 
 .detail-description {
-  margin-top: 10px;
-  font-size: 1rem;
-  line-height: 1.6;
-  text-align: left;
+  font-size: 13px;
+  text-align: right;
+  width: 100%;
   max-width: 800px;
+  margin: 0; /* 💥 margin-top, bottom 싹 제거 */
+  line-height: 0.1; /* 💥 줄간격 최소: 1 */
 }
