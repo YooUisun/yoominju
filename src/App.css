@@ -1,21 +1,34 @@
+/* App.css (또는 전역 스타일 시트) */
+
 html, body {
-  height: 100%;
+  height: 100%; /* 뷰포트 전체 높이를 사용하도록 설정 */
   margin: 0;
   padding: 0;
-  overflow-y: auto; /* 이걸로만 스크롤 관리 */
+  overflow-y: auto; /* 세로 스크롤만 허용 */
+  overflow-x: hidden; /* ✅ 가로 스크롤은 모든 상황에서 방지 */
 }
 
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100vh; 
 }
 
 .app-container.work-min-height {
-  min-height: 200vh;
-  max-height: 1000vh;
+
+  min-height: 100vh; 
+  max-height: auto; 
 }
 
 .routes-wrapper {
-  flex: 1;
+  flex: 1; 
+}
+
+
+@media (max-width: 768px) {
+  .app-container.work-min-height {
+
+    min-height: auto;
+    max-height: auto;
+  }
 }

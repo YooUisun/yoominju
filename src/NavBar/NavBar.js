@@ -31,7 +31,7 @@ function NavBar() {
       <div className="nav-container">
         <h1 className="logo">
           <Link to="/yoominju" className="logo-link">
-            yoo minju
+            yoominju
           </Link>
         </h1>
 

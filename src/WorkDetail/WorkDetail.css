@@ -72,4 +72,5 @@
   max-width: 800px;
   margin: 0; /* 💥 margin-top, bottom 싹 제거 */
   line-height: 0.1; /* 💥 줄간격 최소: 1 */
+  font-size: 0.7rem;
 }
