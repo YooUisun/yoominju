@@ -18,11 +18,8 @@ const Main = () => {
     if (!container || !magnifier) return;
 
     const zoom = 2; // 확대 배율
-    const imgSrc = "/yoominju/img/MainBackground.webp";
-
-    // 돋보기 배경 이미지 설정
-    magnifier.style.backgroundImage = `url(${imgSrc})`;
-    magnifier.style.backgroundRepeat = "no-repeat";
+    // ✅ 이미지 경로 수정: /yoominju/ 제거
+    const imgSrc = "/img/MainBackground.webp"; 
 
     // 이미지 자연 크기 얻기
     const img = new Image();
@@ -83,7 +80,8 @@ const Main = () => {
       className="main-container"
       onClick={handleClick}
       style={{
-        backgroundImage: `url('/yoominju/img/MainBackground.webp')`,
+        // ✅ 이미지 경로 수정: /yoominju/ 제거
+        backgroundImage: `url('/img/MainBackground.webp')`, 
       }}
     >
       <div
