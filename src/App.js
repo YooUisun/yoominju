@@ -15,7 +15,8 @@ import "./App.css";
 
 export default function App() {
   const location = useLocation();
-  const isMainPage = location.pathname.replace(/\/$/, "") === "/yoominju";
+  // isMainPage 로직 변경: 루트 경로('/')일 때가 메인 페이지
+  const isMainPage = location.pathname.replace(/\/$/, "") === ""; // 또는 location.pathname === "/"
 
   // 오직 정확히 /work 경로일 때만 true (WorkDetail 포함 안함)
   const isExactWorkPage = location.pathname === "/work";
@@ -25,7 +26,8 @@ export default function App() {
       {!isMainPage && <NavBar />}
       <div className="routes-wrapper">
         <Routes>
-          <Route path="/yoominju" element={<Main />} />
+          {/* ✅ Main 컴포넌트의 path를 '/'로 변경 */}
+          <Route path="/" element={<Main />} />
           <Route path="/work" element={<Work />} />
           <Route path="/work/:id" element={<WorkDetail />} />
           <Route path="/news" element={<News />} />
