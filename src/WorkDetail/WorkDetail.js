@@ -430,8 +430,8 @@ export default function WorkDetail() {
           let languageLabel = "";
 
           if (item.id === 10) {
-            if (entry.src.includes("2.MP3")) languageLabel = "Korean";
-            if (entry.src.includes("3.MP3")) languageLabel = "German";
+            if (entry.src.includes("2.mp3")) languageLabel = "Korean"; // 소문자로 통일
+            if (entry.src.includes("3.mp3")) languageLabel = "German"; // 소문자로 통일
           } else if (item.id === 13) {
             if (idx === 0) languageLabel = "Korean";
             else if (idx === 1) languageLabel = "English";
@@ -442,7 +442,8 @@ export default function WorkDetail() {
             <div key={idx} className="detail-block">
               <div className="detail-thumb">
                 {isVideo ? (
-                  <video controls width="100%">
+                  // video 태그에 poster 속성 추가 (이전 답변에서 추가된 내용)
+                  <video controls width="100%" poster={entry.poster ? process.env.PUBLIC_URL + entry.poster : ''}>
                     <source
                       src={process.env.PUBLIC_URL + entry.src}
                       type="video/mp4"
@@ -458,6 +459,7 @@ export default function WorkDetail() {
                         gap: "10px",
                       }}
                     >
+                      {/* ✅ 재생 버튼 이미지로 변경 */}
                       <button
                         onClick={() => {
                           const audio = document.getElementById(`audio-${idx}`);
@@ -465,9 +467,15 @@ export default function WorkDetail() {
                             audio.play();
                           }
                         }}
+                        style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }} // 버튼 스타일 제거
                       >
-                        ▶️
+                        <img 
+                          src={process.env.PUBLIC_URL + "/play.PNG"} 
+                          alt="Play" 
+                          style={{ width: '24px', height: '24px'}} // 이미지 크기 조절
+                        />
                       </button>
+                      {/* ✅ 정지 버튼 이미지로 변경 */}
                       <button
                         onClick={() => {
                           const audio = document.getElementById(`audio-${idx}`);
@@ -476,13 +484,18 @@ export default function WorkDetail() {
                             audio.currentTime = 0;
                           }
                         }}
+                        style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }} // 버튼 스타일 제거
                       >
-                        ⏹
+                        <img 
+                          src={process.env.PUBLIC_URL + "/play-pause.PNG"} 
+                          alt="Stop" 
+                          style={{ width: '30px', height: '30px' }} // 이미지 크기 조절
+                        />
                       </button>
                       <span id={`time-${idx}`}></span>
                       {languageLabel && (
                         <span
-                          style={{ fontWeight: "bold", marginLeft: "10px" }}
+                          style={{ fontWeight: "bold", marginLeft: "20px" }}
                         >
                           ({languageLabel})
                         </span>
@@ -503,7 +516,7 @@ export default function WorkDetail() {
                             2,
                             "0"
                           );
-                          timeSpan.innerText = `Remaining Time: ${minutes}:${seconds}`;
+                          timeSpan.innerText = `: ${minutes}:${seconds}`;
                         }
                       }}
                       style={{ display: "none" }}
