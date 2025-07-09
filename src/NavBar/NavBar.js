@@ -8,6 +8,9 @@ function NavBar() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // isMainPage 로직은 App.js에서 처리되므로 여기서는 제거하거나 필요에 따라 사용
+  // const isMainPage = location.pathname.replace(/\/$/, "") === ""; 
+
   const isActive = (path) => currentPath === path;
 
   useEffect(() => {
@@ -36,15 +39,14 @@ function NavBar() {
         </h1>
 
         {isMobile && (
+          // ✅ 햄버거 버튼 대신 'MENU' 텍스트 버튼으로 변경
           <button
-            className={`hamburger ${menuOpen ? "open" : ""}`}
+            className={`menu-toggle-button ${menuOpen ? "open" : ""}`}
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
             onClick={toggleMenu}
           >
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
+            MENU {/* ✅ 'MENU' 텍스트로 변경 */}
           </button>
         )}
 
