@@ -46,7 +46,7 @@ function NavBar() {
             aria-expanded={menuOpen}
             onClick={toggleMenu}
           >
-            MENU {/* ✅ 'MENU' 텍스트로 변경 */}
+            menu {/* ✅ 'MENU' 텍스트로 변경 */}
           </button>
         )}
 
@@ -58,7 +58,7 @@ function NavBar() {
                 className={isActive("/work") ? "active-nav-link" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                WORKS
+                works
               </Link>
             </li>
             <li>
@@ -67,7 +67,7 @@ function NavBar() {
                 className={isActive("/news") ? "active-nav-link" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                NEWS
+                news
               </Link>
             </li>
             <li>
@@ -76,7 +76,7 @@ function NavBar() {
                 className={isActive("/about") ? "active-nav-link" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                ABOUT
+                about
               </Link>
             </li>
             <li>
@@ -85,7 +85,7 @@ function NavBar() {
                 className={isActive("/contact") ? "active-nav-link" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                CONTACT
+                contact
               </Link>
             </li>
           </ul>
