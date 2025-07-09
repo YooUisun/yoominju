@@ -27,6 +27,7 @@
   font-size: 0.9rem;
   color: #000000;
   margin: 0;
+  margin-top: 5px;
 }
 
 /* Masonry 그리드 */
@@ -93,13 +94,13 @@
 
 @media (max-width: 768px) {
   .caption-title {
-    font-size: 0.85rem; /* 더 작게! */
+    font-size: 0.7rem; /* 더 작게! */
     line-height: 1.4; /* 줄간격도 살짝 줄임 */
     font-family: "Helvetica Neue", sans-serif;
   }
   .caption-year-inline,
   .caption-info {
-    font-size: 0.85rem; /* 더 작게! */
+    font-size: 0.7rem; /* 더 작게! */
     line-height: 1.6;
     font-family: "Helvetica Neue", sans-serif;
   }

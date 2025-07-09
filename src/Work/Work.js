@@ -11,7 +11,7 @@ const workData = [
     id: 1,
     src: "/img/WorksMain/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024.webp",
     title:
-      "Schritte² - Young Berlin Artists\nGroup Exhibition at Art Week Berlin",
+      "Schritte²  \nYoung Berlin Artists\nGroup Exhibition \nArt Week Berlin",
     year: "2024",
   },
   {
@@ -24,7 +24,7 @@ const workData = [
     id: 3,
     src: "/img/WorksMain/For all the circles that hold me, for my circles that will hold you.webp",
     title:
-      "나를 담는 모든 동그라미들을 위하여,너를 담을 내 동그라미들을 위하여\nFor all the circles that hold me,for my circles that will hold you",
+      "나를 담는 모든 동그라미들을 위하여, 너를 담을 내 동그라미들을 위하여\nFor all the circles that hold me, for my circles that will hold you",
     year: "2024",
   },
   {
@@ -36,13 +36,15 @@ const workData = [
   {
     id: 5,
     src: "/img/WorksMain/Sie schweben leicht, setzen sich dann ab und werden schwer.webp",
-    title: "Peoples : Sie schweben leicht,setzen sich dann ab und werden schwer",
+    title:
+      "Peoples : \nSie schweben leicht, setzen sich dann ab und werden schwer",
     year: "2024",
   },
   {
     id: 6,
     src: "/img/WorksMain/Cup - Sie schweben leicht, setzen sich dann ab und werden schwer.webp",
-    title: "Object : Sie schweben leicht, setzen sich dann ab und werden schwer",
+    title:
+      "Object : \nSie schweben leicht, setzen sich dann ab und werden schwer",
     year: "2024",
   },
   {
@@ -176,7 +178,7 @@ const workData = [
   {
     id: 28,
     src: "/img/WorksMain/The 7th Daum Junior Photography Festival.webp",
-    title: "The 7th Daum Junior Photography Festival",
+    title: "Daum Junior ",
     year: "2013",
   },
   {
@@ -189,7 +191,7 @@ const workData = [
 const layouts = {
   lg: [
     // 첫 번째 줄
-    { i: "1", x: 1.7, y: 1, w: 2, h: 13 }, // Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin
+    { i: "1", x: 1.7, y: 1, w: 2, h: 14 }, // Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin
     { i: "2", x: 5, y: 4, w: 3.5, h: 15 }, // Sorgenkissenl
     { i: "3", x: 9, y: 1, w: 3, h: 20 }, // 나를 담는 모든 동그라미들을 위하여...
     { i: "4", x: 0, y: 10, w: 3, h: 15 }, // 1st Seoul International Fireworks Festivalr
@@ -201,19 +203,19 @@ const layouts = {
     // 두 번째 줄
     { i: "9", x: 0, y: 19, w: 3, h: 20 }, // Words
     { i: "10", x: 4.5, y: 19, w: 3.5, h: 15 }, // sch
-    { i: "11", x: 9, y: 19, w: 2.5, h: 15 }, // Inneres
+    { i: "11", x: 9, y: 19, w: 2.5, h: 17 }, // Inneres
     { i: "12", x: 1, y: 28, w: 3, h: 13 }, // Re:Fusion
-    { i: "13", x: 5, y: 28, w: 2, h: 12.5 }, // True happiness
+    { i: "13", x: 5, y: 5, w: 2, h: 12.5 }, // True happiness
     { i: "14", x: 8, y: 29, w: 3.2, h: 23 }, // die Spuren des Tages
 
     // 세 번째 줄
     { i: "15", x: 0.2, y: 49, w: 2.2, h: 15 }, // Butter Butter Projekt, 2020
     { i: "16", x: 1, y: 59, w: 3.8, h: 19 }, // Alles in Butter, 2020
     { i: "17", x: 3.5, y: 30, w: 3.5, h: 12 }, // Sleeping Promises, 2022
-    { i: "18", x: 9, y: 49, w: 4.8, h: 16 }, // Der Tag, 2022
-    { i: "19", x: 5, y: 87.7, w: 2, h: 13 }, // 폭발 II, 2019
-    { i: "20", x: 7, y: 59, w: 2, h: 12 }, // 폭발, 2019
-    { i: "21", x: 10, y: 59, w: 2, h: 17 }, // Die Pandemie, 2019
+    { i: "18", x: 9, y: 49, w: 4.8, h: 13 }, // Der Tag, 2022
+    { i: "19", x: 5, y: 89, w: 2, h: 13 }, // 폭발 II, 2019
+    { i: "20", x: 7, y: 89.5, w: 2, h: 12 }, // 폭발, 2019
+    { i: "21", x: 10, y: 90, w: 1.5, h: 17 }, // Die Pandemie, 2019
 
     // 네 번째 줄
     { i: "22", x: 0.1, y: 70, w: 4, h: 15 }, // Der Raum
@@ -223,10 +225,10 @@ const layouts = {
     { i: "25", x: 9, y: 80, w: 2, h: 15 }, // 0-200 (그대로)
 
     // 다섯 번째 줄 (Alles Okay 아래)
-    { i: "26", x: 0, y: 80, w: 4, h: 0 }, // Sa Jin Kwan (위치 유지)
-    { i: "27", x: 5, y: 80, w: 1.34, h: 0 }, // ASYAAF (Alles Okay 아래 살짝 왼쪽)
-    { i: "28", x: 6.5, y: 80, w: 1.3, h: 0 }, // Daum Festival (ASYAAF 바로 오른쪽)
-    { i: "29", x: 9, y: 0, w: 4, h: 10 }, // 열아홉(18) (Daum Festival 오른쪽)
+    { i: "26", x: 0, y: 80, w: 4, h: 10 }, // Sa Jin Kwan (위치 유지)
+    { i: "27", x: 5, y: 80, w: 1.34, h: 10 }, // ASYAAF (Alles Okay 아래 살짝 왼쪽)
+    { i: "28", x: 6.5, y: 80, w: 1.3, h: 10 }, // Daum Festival (ASYAAF 바로 오른쪽)
+    { i: "29", x: 9, y: 90, w: 4, h: 10 }, // 열아홉(18) (Daum Festival 오른쪽)
   ],
 
   sm: [
@@ -234,40 +236,39 @@ const layouts = {
     { i: "1", x: 0, y: 1, w: 4.5, h: 8 }, // Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin
     { i: "2", x: 6, y: 1.5, w: 6, h: 5 }, // Sorgenkissenl
     { i: "3", x: 7, y: 3, w: 5, h: 10 }, // 나를 담는 모든 동그라미들을 위하여...
+    { i: "5", x: 0, y: 5, w: 5, h: 9 }, // Sie schweben leicht, setzen sich dann ab und werden schwer
+    { i: "6", x: 6, y: 5, w: 6, h: 6 }, // Cup - Sie schweben leicht, setzen sich dann ab und werden schwer
     { i: "4", x: 0, y: 7.5, w: 6, h: 5 }, // 1st Seoul International Fireworks Festivalr
-    { i: "5", x: 1, y: 5, w: 4, h: 8 }, // Sie schweben leicht, setzen sich dann ab und werden schwer
-    { i: "6", x: 6, y: 5, w: 6, h: 7 }, // Cup - Sie schweben leicht, setzen sich dann ab und werden schwer
     { i: "7", x: 0, y: 13, w: 5, h: 5 }, // Joyfulling waiting 13 Crackle by 1, 2
-    { i: "8", x: 9, y: 13, w: 6, h: 6 }, // 1, 2
+    { i: "8", x: 9, y: 13, w: 6, h: 4 }, // 1, 2
 
     // 두 번째 줄
-    { i: "9", x: 0, y: 15, w: 5, h: 7 }, // Words
-    { i: "10", x: 7, y: 15, w: 6, h: 5 }, // sch
-    { i: "11", x: 7, y: 15.5, w: 5, h: 7 }, // Inneres
-    { i: "12", x: 1, y: 15.5, w: 5, h: 4 }, // Re:Fusion
-    { i: "13", x: 9, y: 20, w: 5, h: 6 }, // True happiness
-    { i: "14", x: 0, y: 19, w: 7, h: 9 }, // die Spuren des Tages
+    { i: "9", x: 0, y: 15, w: 6, h: 6 }, // Words
+    { i: "10", x: 7, y: 18, w: 6, h: 5 }, // sch
+    { i: "11", x: 9, y: 20, w: 5.5, h: 7 }, // Inneres
+    { i: "12", x: 0, y: 36.5, w: 5, h: 4 }, // Re:Fusion
+    { i: "13", x: 9, y: 37, w: 4.5, h: 3 }, // True happiness
+    { i: "14", x: 0, y: 40, w: 7, h: 9.5 }, // die Spuren des Tages
+    { i: "17", x: 9, y: 44, w: 5, h: 3 }, // Sleeping Promises, 2022
+    { i: "18", x: 0.6, y: 48, w: 12, h: 7 }, // Der Tag, 2022
 
     // 세 번째 줄
-    { i: "15", x: 4, y: 40, w: 8, h: 9 }, // Butter Butter Projekt, 2020
-    { i: "16", x: 0, y: 32, w: 8, h: 5 }, // Alles in Butter, 2020
-    { i: "17", x: 8, y: 25, w: 5, h: 5 }, // Sleeping Promises, 2022
-    { i: "18", x: 6, y: 32, w: 6, h: 5 }, // Der Tag, 2022
-    { i: "19", x: 0, y: 60, w: 2.5, h: 4 }, // 폭발 II, 2019
-    { i: "20", x: 3, y: 60, w: 2.5, h: 3 }, // 폭발, 2019
-    { i: "21", x: 0, y: 75, w: 5, h: 10 }, // Die Pandemie, 2019
+    { i: "15", x: 9, y: 57, w: 4, h: 4.5 }, // Butter Butter Projekt, 2020
+    { i: "16", x: 0, y: 57, w: 7, h: 4.5 }, // Alles in Butter, 2020
+    { i: "19", x: 1, y: 60, w: 5, h: 5 }, // 폭발 II, 2019
+    { i: "20", x: 6, y: 61.8, w: 5, h: 6.7 }, // 폭발, 2019
+    { i: "22", x: 0.3, y: 63, w: 11, h: 7 }, // Der Raum
+    { i: "21", x: 9, y: 76, w: 4, h: 6.6 }, // Die Pandemie, 2019
+    { i: "23", x: 0, y: 77.7, w: 7.8, h: 2 }, // Das Hinterhaus
 
-    // 네 번째 줄
-    { i: "22", x: 0.1, y: 58, w: 5, h: 5 }, // Der Raum
-    { i: "23", x: 0, y: 40, w: 6, h: 1 }, // Das Hinterhaus
-    { i: "24", x: 6, y: 40, w: 6, h: 5 }, // Alles Okay 
-    { i: "25", x: 9, y: 50, w: 6, h: 7 }, // 0-200 
+    { i: "24", x: 6, y: 80, w: 8, h: 3 }, // Alles Okay
+    { i: "25", x: 0, y: 85, w: 4, h: 6 }, // 0-200
 
     // 다섯 번째 줄
-    { i: "26", x: 6, y: 80, w: 7, h: 5 }, // Sa Jin Kwan 
-    { i: "27", x: 0, y: 80, w: 4, h: 1 }, // ASYAAF 
-    { i: "28", x: 5, y: 80, w: 4, h: 7 }, // Daum Festival
-    { i: "29", x: 1, y: 80, w: 6, h: 1 }, // 열아홉(18)
+    { i: "26", x: 10, y: 88, w: 7, h: 5 }, // Sa Jin Kwan
+    { i: "27", x: 1, y: 93, w: 3, h: 4.2 }, // ASYAAF
+    { i: "28", x: 4, y: 93, w: 3, h: 4 }, // Daum Festival
+    { i: "29", x: 9, y: 94, w: 11, h: 10 }, // 열아홉(18)
   ],
 };
 
