@@ -30,7 +30,7 @@ function NavBar() {
     <header className="header">
       <div className="nav-container">
         <h1 className="logo">
-          <Link to="/yoominju" className="logo-link">
+          <Link to="/" className="logo-link">
             yoominju
           </Link>
         </h1>
