@@ -47,23 +47,27 @@
 .detail-gallery-vertical {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 70px;
 }
 
 .detail-block {
   display: flex;
   flex-direction: column;
   align-items: center;
-    gap: 0; /* 💥 gap 완전 제거 */
-
+  gap: 0; /* 💥 gap 완전 제거 */
 }
 
-.detail-thumb img {
+/* ✅ 이미지와 비디오 모두에 동일한 크기 속성 적용 */
+.detail-thumb img,
+.detail-thumb video { /* ✅ video 선택자 추가 */
   width: 100%;
-  max-width: 800px;
+  max-width: 800px; /* ✅ max-width 추가 */
+  height: auto; /* ✅ 비디오의 종횡비 유지를 위해 height: auto 추가 */
+  object-fit: cover; /* ✅ 비디오도 object-fit 적용 (원하는 경우) */
   margin: 0; /* 💥 margin-bottom까지 0으로! */
-  display: block; /* 💥 이미지 인라인 간격 방지 */
+  display: block; /* 💥 이미지/비디오 인라인 간격 방지 */
 }
+
 
 .detail-description {
   font-size: 13px;
@@ -73,4 +77,12 @@
   margin: 0; /* 💥 margin-top, bottom 싹 제거 */
   line-height: 0.1; /* 💥 줄간격 최소: 1 */
   font-size: 0.7rem;
+}
+
+/* ✅ 특정 작품 ID (22, 23)에 대한 이미지/비디오 크기 오버라이드 */
+.large-image-work .detail-thumb img,
+.large-image-work .detail-thumb video {
+  max-width: 1000px; /* 더 큰 최대 너비 (detail-wrapper와 동일) */
+  /* 만약 1000px보다 더 크게 하고 싶다면, detail-wrapper의 max-width를 조정하거나
+     overflow 관련 속성을 고려해야 할 수 있습니다. */
 }

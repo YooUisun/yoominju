@@ -11,22 +11,29 @@ const workData = [
     year: "2024",
     gallery: [
       {
-        src: process.env.PUBLIC_URL + "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/1.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/1.webp",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/2.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/2.webp",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/3.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/3.webp",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/4.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/4.webp",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/5.webp",
-      },
-      {
-        src: process.env.PUBLIC_URL + "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/6.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/6.webp",
       },
     ],
   },
@@ -37,12 +44,11 @@ const workData = [
     year: "2024",
     gallery: [
       { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/1.mp4" },
+      { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/6.mp4" },
       { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/2.webp" },
       { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/3.webp" },
       { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/4.webp" },
       { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/6.mp4" },
-      { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/7.webp" },
     ],
   },
 
@@ -53,25 +59,34 @@ const workData = [
     year: "2024",
     gallery: [
       {
-        src: process.env.PUBLIC_URL + "/img/For all the circles that hold me, for my circles that will hold you/1.mp4",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/For all the circles that hold me, for my circles that will hold you/1.mp4",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/For all the circles that hold me, for my circles that will hold you/2.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/For all the circles that hold me, for my circles that will hold you/2.webp",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/For all the circles that hold me, for my circles that will hold you/3.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/For all the circles that hold me, for my circles that will hold you/3.webp",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/For all the circles that hold me, for my circles that will hold you/4.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/For all the circles that hold me, for my circles that will hold you/4.webp",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/For all the circles that hold me, for my circles that will hold you/5.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/For all the circles that hold me, for my circles that will hold you/6.webp",caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/For all the circles that hold me, for my circles that will hold you/6.webp",
-      },
-      {
-        src: process.env.PUBLIC_URL + "/img/For all the circles that hold me, for my circles that will hold you/7.webp",
+        src:
+          process.env.PUBLIC_URL +
+          "/img/For all the circles that hold me, for my circles that will hold you/7.webp",caption: "Exhibition view at Kunstraum Potsdamer Straße",
       },
     ],
   },
@@ -81,9 +96,21 @@ const workData = [
     title: "1st Seoul International Fireworks Festival",
     year: "2024",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/1st Seoul International Fireworks Festival/1.mp4" },
-      { src: process.env.PUBLIC_URL + "/img/1st Seoul International Fireworks Festival/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/1st Seoul International Fireworks Festival/3.webp" },
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/1st Seoul International Fireworks Festival/1.mp4",
+      },
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/1st Seoul International Fireworks Festival/2.webp",caption: "Exhibition view at Kunstraum Potsdamer Straße",
+      },
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/1st Seoul International Fireworks Festival/3.webp",caption: "Exhibition view at Kunstraum Potsdamer Straße",
+      },
     ],
   },
   {
@@ -127,7 +154,15 @@ const workData = [
     id: 7,
     title: "Joyfulling waiting 13 Crackle by 1, 2",
     year: "2023",
-    gallery: [{ src: process.env.PUBLIC_URL + "/img/Joyfulling waiting 13 Crackle by 1, 2/1.webp" }],
+    gallery: [
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/Joyfulling waiting 13 Crackle by 1, 2/1.webp",
+      },
+    ],
+    // ✅ 외부 링크 속성 추가
+    externalLink: "https://joyfully-waiting.ch/joyfully-waiting-13",
   },
   {
     id: 8,
@@ -136,11 +171,23 @@ const workData = [
     gallery: [
       { src: process.env.PUBLIC_URL + "/img/1,2/1.webp" },
       { src: process.env.PUBLIC_URL + "/img/1,2/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/1,2/3.webp", caption: "© Julian Blum" },
-      { src: process.env.PUBLIC_URL + "/img/1,2/4.webp", caption: "© Julian Blum" },
-      { src: process.env.PUBLIC_URL + "/img/1,2/5.webp", caption: "© Julian Blum" },
-      { src: process.env.PUBLIC_URL + "/img/1,2/6.webp", caption: "© Julian Blum" },
-      { src: process.env.PUBLIC_URL + "/img/1,2/7.webp" },
+      {
+        src: process.env.PUBLIC_URL + "/img/1,2/3.webp",
+        caption: "© Julian Blum",
+      },
+      {
+        src: process.env.PUBLIC_URL + "/img/1,2/4.webp",
+        caption: "© Julian Blum",
+      },
+      {
+        src: process.env.PUBLIC_URL + "/img/1,2/5.webp",
+        caption: "© Julian Blum",
+      },
+      {
+        src: process.env.PUBLIC_URL + "/img/1,2/6.webp",
+        caption: "© Julian Blum",
+      },
+      { src: process.env.PUBLIC_URL + "/img/1,2/7.webp",caption: "© Julian Blum", },
       { src: process.env.PUBLIC_URL + "/img/1,2/8.webp" },
       { src: process.env.PUBLIC_URL + "/img/1,2/9.webp" },
     ],
@@ -165,18 +212,16 @@ const workData = [
       { src: process.env.PUBLIC_URL + "/img/sch/4.webp" },
     ],
   },
-    {
+  {
     id: 11,
     title: "Inneres",
     year: "2023",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/Inneres/1.webp" },
       { src: process.env.PUBLIC_URL + "/img/Inneres/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Inneres/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Inneres/4.webp" },
+      { src: process.env.PUBLIC_URL + "/img/Inneres/1.webp" },
       { src: process.env.PUBLIC_URL + "/img/Inneres/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Inneres/6.webp" },
       { src: process.env.PUBLIC_URL + "/img/Inneres/7.webp" },
+      { src: process.env.PUBLIC_URL + "/img/Inneres/3.webp" },
       { src: process.env.PUBLIC_URL + "/img/Inneres/8.webp" },
       { src: process.env.PUBLIC_URL + "/img/Inneres/9.webp" },
     ],
@@ -204,8 +249,8 @@ const workData = [
       { src: process.env.PUBLIC_URL + "/img/True happiness/1.mp3" },
       { src: process.env.PUBLIC_URL + "/img/True happiness/2.mp3" },
       { src: process.env.PUBLIC_URL + "/img/True happiness/3.mp3" },
-      { src: process.env.PUBLIC_URL + "/img/True happiness/4.mp4" },
-      { src: process.env.PUBLIC_URL + "/img/True happiness/5.mp4" },
+      { src: process.env.PUBLIC_URL + "/img/True happiness/4.mp4" ,caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",},
+      { src: process.env.PUBLIC_URL + "/img/True happiness/5.mp4" ,caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",},
     ],
   },
   {
@@ -215,7 +260,7 @@ const workData = [
     gallery: [
       { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/1.webp" },
       { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/1-1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/1-2.mp4" },
+      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/1-2.mp4", caption: "Performance - Rundgang at UdK" },
       { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/1-3.webp" },
       { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/2.webp" },
       { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/4.webp" },
@@ -247,7 +292,6 @@ const workData = [
       { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/30.webp" },
       { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/31.webp" },
       { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/32.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/33.webp" },
     ],
   },
   {
@@ -286,9 +330,8 @@ const workData = [
     year: "2022",
     gallery: [
       { src: process.env.PUBLIC_URL + "/img/der Tag/1.mp4" },
-      { src: process.env.PUBLIC_URL + "/img/der Tag/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/der Tag/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/der Tag/4.webp" },
+      { src: process.env.PUBLIC_URL + "/img/der Tag/3.webp" ,caption: "Exhibition view at Feldf+nf Gallery" },
+      { src: process.env.PUBLIC_URL + "/img/der Tag/4.webp" ,caption: "Exhibition view at Feldf+nf Gallery" },
     ],
   },
   {
@@ -374,12 +417,36 @@ const workData = [
     title: "The 7th Daum Junior Photography Festival",
     year: "2013",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/The 7th Daum Junior Photography Festival/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/The 7th Daum Junior Photography Festival/1-1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/The 7th Daum Junior Photography Festival/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/The 7th Daum Junior Photography Festival/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/The 7th Daum Junior Photography Festival/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/The 7th Daum Junior Photography Festival/6.webp" },
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/The 7th Daum Junior Photography Festival/1-1.webp",
+      },
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/The 7th Daum Junior Photography Festival/1.webp",
+      },
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/The 7th Daum Junior Photography Festival/2.webp",
+      },
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/The 7th Daum Junior Photography Festival/4.webp",
+      },
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/The 7th Daum Junior Photography Festival/5.webp",
+      },
+      {
+        src:
+          process.env.PUBLIC_URL +
+          "/img/The 7th Daum Junior Photography Festival/6.webp",
+      },
     ],
   },
   {
@@ -426,23 +493,36 @@ export default function WorkDetail() {
           const isVideo = src.endsWith(".mov") || src.endsWith(".mp4");
           const isAudio = src.endsWith(".mp3");
 
-          // 13번 id 진정한 행복 특별 언어 표시
           let languageLabel = "";
 
           if (item.id === 10) {
-            if (entry.src.includes("2.mp3")) languageLabel = "Korean"; // 소문자로 통일
-            if (entry.src.includes("3.mp3")) languageLabel = "German"; // 소문자로 통일
+            if (entry.src.includes("2.mp3")) languageLabel = "Korean";
+            if (entry.src.includes("3.mp3")) languageLabel = "German";
           } else if (item.id === 13) {
             if (idx === 0) languageLabel = "Korean";
             else if (idx === 1) languageLabel = "English";
             else if (idx === 2) languageLabel = "German";
           }
 
+          let blockStyle = {};
+          if (item.id === 4) {
+            if (idx === 0) {
+              blockStyle = { marginBottom: '20px' };
+            }
+          } else if (item.id === 11) {
+              if (idx === 4) {
+                  blockStyle = { marginBottom: '30px' };
+              }
+          }
+
+          // ✅ 특정 ID에 따라 클래스 추가
+          const blockClassName = `detail-block ${item.id === 22 || item.id === 23 ? 'large-image-work' : ''}`;
+
+
           return (
-            <div key={idx} className="detail-block">
+            <div key={idx} className={blockClassName} style={blockStyle}> {/* ✅ 클래스 이름 변경 */}
               <div className="detail-thumb">
                 {isVideo ? (
-                  // video 태그에 poster 속성 추가 (이전 답변에서 추가된 내용)
                   <video controls width="100%" poster={entry.poster ? process.env.PUBLIC_URL + entry.poster : ''}>
                     <source
                       src={process.env.PUBLIC_URL + entry.src}
@@ -459,7 +539,6 @@ export default function WorkDetail() {
                         gap: "10px",
                       }}
                     >
-                      {/* ✅ 재생 버튼 이미지로 변경 */}
                       <button
                         onClick={() => {
                           const audio = document.getElementById(`audio-${idx}`);
@@ -467,15 +546,14 @@ export default function WorkDetail() {
                             audio.play();
                           }
                         }}
-                        style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }} // 버튼 스타일 제거
+                        style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }}
                       >
-                        <img 
-                          src={process.env.PUBLIC_URL + "/img/play.png"} 
-                          alt="Play" 
-                          style={{ width: '24px', height: '24px'}} // 이미지 크기 조절
+                        <img
+                          src={process.env.PUBLIC_URL + "/img/play.png"}
+                          alt="Play"
+                          style={{ width: '24px', height: '24px' }}
                         />
                       </button>
-                      {/* ✅ 정지 버튼 이미지로 변경 */}
                       <button
                         onClick={() => {
                           const audio = document.getElementById(`audio-${idx}`);
@@ -484,12 +562,12 @@ export default function WorkDetail() {
                             audio.currentTime = 0;
                           }
                         }}
-                        style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }} // 버튼 스타일 제거
+                        style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }}
                       >
-                        <img 
-                          src={process.env.PUBLIC_URL + "/img/play-pause.png"} 
-                          alt="Stop" 
-                          style={{ width: '30px', height: '30px' }} // 이미지 크기 조절
+                        <img
+                          src={process.env.PUBLIC_URL + "/img/play-pause.png"}
+                          alt="Stop"
+                          style={{ width: '30px', height: '30px' }}
                         />
                       </button>
                       <span id={`time-${idx}`}></span>
@@ -516,7 +594,7 @@ export default function WorkDetail() {
                             2,
                             "0"
                           );
-                          timeSpan.innerText = `: ${minutes}:${seconds}`;
+                          timeSpan.innerText = `Remaining Time: ${minutes}:${seconds}`;
                         }
                       }}
                       style={{ display: "none" }}
@@ -534,6 +612,24 @@ export default function WorkDetail() {
                 {/* caption 있을 때만 보여줌 */}
                 {entry.caption && <p>{entry.caption}</p>}
               </div>
+
+              {item.externalLink && idx === item.gallery.length - 1 && (
+                <div style={{ marginTop: '15px', textAlign: 'center', width: '100%' }}>
+                  <a
+                    href={item.externalLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      color: '#007bff',
+                      textDecoration: 'underline',
+                      fontSize: '0.9rem',
+                      fontWeight: 'bold'
+                    }}
+                  >
+                    {item.externalLink}
+                  </a>
+                </div>
+              )}
             </div>
           );
         })}
