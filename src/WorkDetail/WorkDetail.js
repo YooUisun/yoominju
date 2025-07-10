@@ -12,28 +12,23 @@ const workData = [
     gallery: [
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/1.webp",
+          "../img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/1.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/2.webp",
+          "../img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/2.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/3.webp",
+          "../img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/3.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/4.webp",
+          "../img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/4.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/6.webp",
+          "../img/Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin, 2024/6.webp",
       },
     ],
   },
@@ -43,12 +38,12 @@ const workData = [
     title: "Sorgenkissen",
     year: "2024",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/1.mp4" },
-      { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/6.mp4" },
-      { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Sorgenkissen/5.webp" },
+      { src: "../img/Sorgenkissen/1.mp4" },
+      { src: "../img/Sorgenkissen/6.mp4" },
+      { src: "../img/Sorgenkissen/2.webp" },
+      { src: "../img/Sorgenkissen/3.webp" },
+      { src: "../img/Sorgenkissen/4.webp" },
+      { src: "../img/Sorgenkissen/5.webp" },
     ],
   },
 
@@ -60,33 +55,27 @@ const workData = [
     gallery: [
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/For all the circles that hold me, for my circles that will hold you/1.mp4",
+          "../img/For all the circles that hold me, for my circles that will hold you/1.mp4",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/For all the circles that hold me, for my circles that will hold you/2.webp",
+          "../img/For all the circles that hold me, for my circles that will hold you/2.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/For all the circles that hold me, for my circles that will hold you/3.webp",
+          "../img/For all the circles that hold me, for my circles that will hold you/3.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/For all the circles that hold me, for my circles that will hold you/4.webp",
+          "../img/For all the circles that hold me, for my circles that will hold you/4.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/For all the circles that hold me, for my circles that will hold you/6.webp",caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",
+          "../img/For all the circles that hold me, for my circles that will hold you/6.webp",caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/For all the circles that hold me, for my circles that will hold you/7.webp",caption: "Exhibition view at Kunstraum Potsdamer Straße",
+          "../img/For all the circles that hold me, for my circles that will hold you/7.webp",caption: "Exhibition view at Kunstraum Potsdamer Straße",
       },
     ],
   },
@@ -98,18 +87,15 @@ const workData = [
     gallery: [
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/1st Seoul International Fireworks Festival/1.mp4",
+          "../img/1st Seoul International Fireworks Festival/1.mp4",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/1st Seoul International Fireworks Festival/2.webp",caption: "Exhibition view at Kunstraum Potsdamer Straße",
+          "../img/1st Seoul International Fireworks Festival/2.webp",caption: "Exhibition view at Kunstraum Potsdamer Straße",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/1st Seoul International Fireworks Festival/3.webp",caption: "Exhibition view at Kunstraum Potsdamer Straße",
+          "../img/1st Seoul International Fireworks Festival/3.webp",caption: "Exhibition view at Kunstraum Potsdamer Straße",
       },
     ],
   },
@@ -119,14 +105,14 @@ const workData = [
       "Peoples : Sie schweben leicht, setzen sich dann ab und werden schwer",
     year: "2024",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/ppl/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/ppl/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/ppl/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/ppl/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/ppl/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/ppl/6.webp" },
-      { src: process.env.PUBLIC_URL + "/img/ppl/7.webp" },
-      { src: process.env.PUBLIC_URL + "/img/ppl/8.webp" },
+      { src: "../img/ppl/1.webp" },
+      { src: "../img/ppl/2.webp" },
+      { src: "../img/ppl/3.webp" },
+      { src: "../img/ppl/4.webp" },
+      { src: "../img/ppl/5.webp" },
+      { src: "../img/ppl/6.webp" },
+      { src: "../img/ppl/7.webp" },
+      { src: "../img/ppl/8.webp" },
     ],
   },
   {
@@ -135,19 +121,19 @@ const workData = [
       "Object : Sie schweben leicht, setzen sich dann ab und werden schwer",
     year: "2024",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/cup/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/6.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/7.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/8.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/9.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/10.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/11.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/12.webp" },
-      { src: process.env.PUBLIC_URL + "/img/cup/13.webp" },
+      { src: "../img/cup/1.webp" },
+      { src: "../img/cup/2.webp" },
+      { src: "../img/cup/3.webp" },
+      { src: "../img/cup/4.webp" },
+      { src: "../img/cup/5.webp" },
+      { src: "../img/cup/6.webp" },
+      { src: "../img/cup/7.webp" },
+      { src: "../img/cup/8.webp" },
+      { src: "../img/cup/9.webp" },
+      { src: "../img/cup/10.webp" },
+      { src: "../img/cup/11.webp" },
+      { src: "../img/cup/12.webp" },
+      { src: "../img/cup/13.webp" },
     ],
   },
   {
@@ -157,11 +143,10 @@ const workData = [
     gallery: [
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/Joyfulling waiting 13 Crackle by 1, 2/1.webp",
+          "../img/Joyfulling waiting 13 Crackle by 1, 2/1.webp",
       },
     ],
-    // ✅ 외부 링크 속성 추가
+    // ✅ 외부 링크 속성 추가 (경로는 그대로 유지)
     externalLink: "https://joyfully-waiting.ch/joyfully-waiting-13",
   },
   {
@@ -169,27 +154,27 @@ const workData = [
     title: "1, 2",
     year: "2023",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/1,2/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/1,2/2.webp" },
+      { src: "../img/1,2/1.webp" },
+      { src: "../img/1,2/2.webp" },
       {
-        src: process.env.PUBLIC_URL + "/img/1,2/3.webp",
+        src: "../img/1,2/3.webp",
         caption: "© Julian Blum",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/1,2/4.webp",
+        src: "../img/1,2/4.webp",
         caption: "© Julian Blum",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/1,2/5.webp",
+        src: "../img/1,2/5.webp",
         caption: "© Julian Blum",
       },
       {
-        src: process.env.PUBLIC_URL + "/img/1,2/6.webp",
+        src: "../img/1,2/6.webp",
         caption: "© Julian Blum",
       },
-      { src: process.env.PUBLIC_URL + "/img/1,2/7.webp",caption: "© Julian Blum", },
-      { src: process.env.PUBLIC_URL + "/img/1,2/8.webp" },
-      { src: process.env.PUBLIC_URL + "/img/1,2/9.webp" },
+      { src: "../img/1,2/7.webp",caption: "© Julian Blum", },
+      { src: "../img/1,2/8.webp" },
+      { src: "../img/1,2/9.webp" },
     ],
   },
   //첫 번째 줄 끝
@@ -199,17 +184,17 @@ const workData = [
     id: 9,
     title: "Words",
     year: "2023",
-    gallery: [{ src: process.env.PUBLIC_URL + "/img/Words/1.webp" }],
+    gallery: [{ src: "../img/Words/1.webp" }],
   },
   {
     id: 10,
     title: "sch",
     year: "2023",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/sch/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/sch/2.mp3" },
-      { src: process.env.PUBLIC_URL + "/img/sch/3.mp3" },
-      { src: process.env.PUBLIC_URL + "/img/sch/4.webp" },
+      { src: "../img/sch/1.webp" },
+      { src: "../img/sch/2.mp3" },
+      { src: "../img/sch/3.mp3" },
+      { src: "../img/sch/4.webp" },
     ],
   },
   {
@@ -217,13 +202,13 @@ const workData = [
     title: "Inneres",
     year: "2023",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/Inneres/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Inneres/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Inneres/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Inneres/7.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Inneres/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Inneres/8.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Inneres/9.webp" },
+      { src: "../img/Inneres/2.webp" },
+      { src: "../img/Inneres/1.webp" },
+      { src: "../img/Inneres/5.webp" },
+      { src: "../img/Inneres/7.webp" },
+      { src: "../img/Inneres/3.webp" },
+      { src: "../img/Inneres/8.webp" },
+      { src: "../img/Inneres/9.webp" },
     ],
   },
   {
@@ -231,26 +216,26 @@ const workData = [
     title: "Re:Fusion",
     year: "2023",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/Re_Fusion/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Re_Fusion/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Re_Fusion/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Re_Fusion/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Re_Fusion/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Re_Fusion/6.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Re_Fusion/7.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Re_Fusion/8.webp" },
+      { src: "../img/Re_Fusion/1.webp" },
+      { src: "../img/Re_Fusion/2.webp" },
+      { src: "../img/Re_Fusion/3.webp" },
+      { src: "../img/Re_Fusion/4.webp" },
+      { src: "../img/Re_Fusion/5.webp" },
+      { src: "../img/Re_Fusion/6.webp" },
+      { src: "../img/Re_Fusion/7.webp" },
+      { src: "../img/Re_Fusion/8.webp" },
     ],
   },
-  {
+    {
     id: 13,
     title: "진정한 행복 \nTrue happiness\nwahres Glück",
     year: "2022",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/True happiness/1.mp3" },
-      { src: process.env.PUBLIC_URL + "/img/True happiness/2.mp3" },
-      { src: process.env.PUBLIC_URL + "/img/True happiness/3.mp3" },
-      { src: process.env.PUBLIC_URL + "/img/True happiness/4.mp4" ,caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",},
-      { src: process.env.PUBLIC_URL + "/img/True happiness/5.mp4" ,caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",},
+      { src: "../img/True happiness/1.mp3" },
+      { src: "../img/True happiness/2.mp3" },
+      { src: "../img/True happiness/3.mp3" },
+      { src: "../img/True happiness/4.mp4" ,caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",},
+      { src: "../img/True happiness/5.mp4" ,caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",},
     ],
   },
   {
@@ -258,40 +243,40 @@ const workData = [
     title: "die Spuren des Tages",
     year: "2022",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/1-1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/1-2.mp4", caption: "Performance - Rundgang at UdK" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/1-3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/6.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/7.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/8.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/9.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/10.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/11.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/12.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/13.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/14.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/15.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/16.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/17.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/18.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/19.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/20.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/21.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/22.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/23.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/24.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/25.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/26.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/27.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/28.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/29.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/30.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/31.webp" },
-      { src: process.env.PUBLIC_URL + "/img/die Spuren des Tages/32.webp" },
+      { src: "../img/die Spuren des Tages/1.webp" },
+      { src: "../img/die Spuren des Tages/1-1.webp" },
+      { src: "../img/die Spuren des Tages/1-2.mp4", caption: "Performance - Rundgang at UdK" },
+      { src: "../img/die Spuren des Tages/1-3.webp" },
+      { src: "../img/die Spuren des Tages/2.webp" },
+      { src: "../img/die Spuren des Tages/4.webp" },
+      { src: "../img/die Spuren des Tages/5.webp" },
+      { src: "../img/die Spuren des Tages/6.webp" },
+      { src: "../img/die Spuren des Tages/7.webp" },
+      { src: "../img/die Spuren des Tages/8.webp" },
+      { src: "../img/die Spuren des Tages/9.webp" },
+      { src: "../img/die Spuren des Tages/10.webp" },
+      { src: "../img/die Spuren des Tages/11.webp" },
+      { src: "../img/die Spuren des Tages/12.webp" },
+      { src: "../img/die Spuren des Tages/13.webp" },
+      { src: "../img/die Spuren des Tages/14.webp" },
+      { src: "../img/die Spuren des Tages/15.webp" },
+      { src: "../img/die Spuren des Tages/16.webp" },
+      { src: "../img/die Spuren des Tages/17.webp" },
+      { src: "../img/die Spuren des Tages/18.webp" },
+      { src: "../img/die Spuren des Tages/19.webp" },
+      { src: "../img/die Spuren des Tages/20.webp" },
+      { src: "../img/die Spuren des Tages/21.webp" },
+      { src: "../img/die Spuren des Tages/22.webp" },
+      { src: "../img/die Spuren des Tages/23.webp" },
+      { src: "../img/die Spuren des Tages/24.webp" },
+      { src: "../img/die Spuren des Tages/25.webp" },
+      { src: "../img/die Spuren des Tages/26.webp" },
+      { src: "../img/die Spuren des Tages/27.webp" },
+      { src: "../img/die Spuren des Tages/28.webp" },
+      { src: "../img/die Spuren des Tages/29.webp" },
+      { src: "../img/die Spuren des Tages/30.webp" },
+      { src: "../img/die Spuren des Tages/31.webp" },
+      { src: "../img/die Spuren des Tages/32.webp" },
     ],
   },
   {
@@ -299,8 +284,8 @@ const workData = [
     title: "Butterbutter projekt",
     year: "2020",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/Butterbutterprojekt/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Butterbutterprojekt/2.webp" },
+      { src: "../img/Butterbutterprojekt/1.webp" },
+      { src: "../img/Butterbutterprojekt/2.webp" },
     ],
   },
   {
@@ -308,11 +293,11 @@ const workData = [
     title: "Alles in Butter",
     year: "2020",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/alles in Butter/1.mp4" },
-      { src: process.env.PUBLIC_URL + "/img/alles in Butter/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/alles in Butter/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/alles in Butter/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/alles in Butter/5.webp" },
+      { src: "../img/alles in Butter/1.mp4" },
+      { src: "../img/alles in Butter/2.webp" },
+      { src: "../img/alles in Butter/3.webp" },
+      { src: "../img/alles in Butter/4.webp" },
+      { src: "../img/alles in Butter/5.webp" },
     ],
   },
   {
@@ -320,8 +305,8 @@ const workData = [
     title: "sleeping promisses",
     year: "2022",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/sleeping promisses/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/sleeping promisses/2.webp" },
+      { src: "../img/sleeping promisses/1.webp" },
+      { src: "../img/sleeping promisses/2.webp" },
     ],
   },
   {
@@ -329,52 +314,52 @@ const workData = [
     title: "der Tag",
     year: "2022",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/der Tag/1.mp4" },
-      { src: process.env.PUBLIC_URL + "/img/der Tag/3.webp" ,caption: "Exhibition view at Feldf+nf Gallery" },
-      { src: process.env.PUBLIC_URL + "/img/der Tag/4.webp" ,caption: "Exhibition view at Feldf+nf Gallery" },
+      { src: "../img/der Tag/1.mp4" },
+      { src: "../img/der Tag/3.webp" ,caption: "Exhibition view at Feldf+nf Gallery" },
+      { src: "../img/der Tag/4.webp" ,caption: "Exhibition view at Feldf+nf Gallery" },
     ],
   },
   {
     id: 19,
     title: "폭발 II",
     year: "2019",
-    gallery: [{ src: process.env.PUBLIC_URL + "/img/boom2/1.webp" }],
+    gallery: [{ src: "../img/boom2/1.webp" }],
   },
   {
     id: 20,
     title: "폭발",
     year: "2019",
-    gallery: [{ src: process.env.PUBLIC_URL + "/img/boom/1.webp" }],
+    gallery: [{ src: "../img/boom/1.webp" }],
   },
-  {
+    {
     id: 21,
     title: "die Pandemie",
     year: "2019",
-    gallery: [{ src: process.env.PUBLIC_URL + "/img/die Pandemie/1.webp" }],
+    gallery: [{ src: "../img/die Pandemie/1.webp" }],
   },
   {
     id: 22,
     title: "der Raum",
     year: "2019",
-    gallery: [{ src: process.env.PUBLIC_URL + "/img/der Raum/1.webp" }],
+    gallery: [{ src: "../img/der Raum/1.webp" }],
   },
   {
     id: 23,
     title: "das Hinterhaus",
     year: "2019",
-    gallery: [{ src: process.env.PUBLIC_URL + "/img/das Hinterhaus/1.webp" }],
+    gallery: [{ src: "../img/das Hinterhaus/1.webp" }],
   },
   {
     id: 24,
     title: "Alles Okay",
     year: "2017",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/Alles Okay/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Alles Okay/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Alles Okay/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Alles Okay/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Alles Okay/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Alles Okay/6.webp" },
+      { src: "../img/Alles Okay/1.webp" },
+      { src: "../img/Alles Okay/2.webp" },
+      { src: "../img/Alles Okay/3.webp" },
+      { src: "../img/Alles Okay/4.webp" },
+      { src: "../img/Alles Okay/5.webp" },
+      { src: "../img/Alles Okay/6.webp" },
     ],
   },
   {
@@ -382,12 +367,12 @@ const workData = [
     title: "0-200",
     year: "2017",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/0-200/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/0-200/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/0-200/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/0-200/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/0-200/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/0-200/6.webp" },
+      { src: "../img/0-200/1.webp" },
+      { src: "../img/0-200/2.webp" },
+      { src: "../img/0-200/3.webp" },
+      { src: "../img/0-200/4.webp" },
+      { src: "../img/0-200/5.webp" },
+      { src: "../img/0-200/6.webp" },
     ],
   },
   {
@@ -395,12 +380,12 @@ const workData = [
     title: "Sa Jin Gwan",
     year: "2014",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/Sa Jin Gwan/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Sa Jin Gwan/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Sa Jin Gwan/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Sa Jin Gwan/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Sa Jin Gwan/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/Sa Jin Gwan/6.webp" },
+      { src: "../img/Sa Jin Gwan/1.webp" },
+      { src: "../img/Sa Jin Gwan/2.webp" },
+      { src: "../img/Sa Jin Gwan/3.webp" },
+      { src: "../img/Sa Jin Gwan/4.webp" },
+      { src: "../img/Sa Jin Gwan/5.webp" },
+      { src: "../img/Sa Jin Gwan/6.webp" },
     ],
   },
   {
@@ -408,8 +393,8 @@ const workData = [
     title: "ASYAAF",
     year: "2014",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/ASYAAF/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/ASYAAF/2.webp" },
+      { src: "../img/ASYAAF/1.webp" },
+      { src: "../img/ASYAAF/2.webp" },
     ],
   },
   {
@@ -419,33 +404,27 @@ const workData = [
     gallery: [
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/The 7th Daum Junior Photography Festival/1-1.webp",
+          "../img/The 7th Daum Junior Photography Festival/1-1.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/The 7th Daum Junior Photography Festival/1.webp",
+          "../img/The 7th Daum Junior Photography Festival/1.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/The 7th Daum Junior Photography Festival/2.webp",
+          "../img/The 7th Daum Junior Photography Festival/2.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/The 7th Daum Junior Photography Festival/4.webp",
+          "../img/The 7th Daum Junior Photography Festival/4.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/The 7th Daum Junior Photography Festival/5.webp",
+          "../img/The 7th Daum Junior Photography Festival/5.webp",
       },
       {
         src:
-          process.env.PUBLIC_URL +
-          "/img/The 7th Daum Junior Photography Festival/6.webp",
+          "../img/The 7th Daum Junior Photography Festival/6.webp",
       },
     ],
   },
@@ -454,13 +433,13 @@ const workData = [
     title: "열아홉\n18",
     year: "2013",
     gallery: [
-      { src: process.env.PUBLIC_URL + "/img/열아홉/1.webp" },
-      { src: process.env.PUBLIC_URL + "/img/열아홉/2.webp" },
-      { src: process.env.PUBLIC_URL + "/img/열아홉/3.webp" },
-      { src: process.env.PUBLIC_URL + "/img/열아홉/4.webp" },
-      { src: process.env.PUBLIC_URL + "/img/열아홉/5.webp" },
-      { src: process.env.PUBLIC_URL + "/img/열아홉/6.webp" },
-      { src: process.env.PUBLIC_URL + "/img/열아홉/7.webp" },
+      { src: "../img/열아홉/1.webp" },
+      { src: "../img/열아홉/2.webp" },
+      { src: "../img/열아홉/3.webp" },
+      { src: "../img/열아홉/4.webp" },
+      { src: "../img/열아홉/5.webp" },
+      { src: "../img/열아홉/6.webp" },
+      { src: "../img/열아홉/7.webp" },
     ],
   },
   // ... 나머지도 같은 형식으로 이어서 작성
@@ -539,7 +518,7 @@ export default function WorkDetail() {
                         gap: "10px",
                       }}
                     >
-                      <button
+                        <button
                         onClick={() => {
                           const audio = document.getElementById(`audio-${idx}`);
                           if (audio) {
@@ -549,7 +528,8 @@ export default function WorkDetail() {
                         style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }}
                       >
                         <img
-                          src={process.env.PUBLIC_URL + "/img/Audio/play.png"}
+                          // ✅ 경로 수정: process.env.PUBLIC_URL 제거하고 '../' 사용
+                          src="../img/Audio/play.png"
                           alt="Play"
                           style={{ width: '24px', height: '24px' }}
                         />
@@ -565,7 +545,8 @@ export default function WorkDetail() {
                         style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }}
                       >
                         <img
-                          src={process.env.PUBLIC_URL + "/img/Audio/play-pause.png"}
+                          // ✅ 경로 수정: process.env.PUBLIC_URL 제거하고 '../' 사용
+                          src="../img/Audio/play-pause.png"
                           alt="Stop"
                           style={{ width: '30px', height: '30px' }}
                         />
@@ -594,7 +575,7 @@ export default function WorkDetail() {
                             2,
                             "0"
                           );
-                          timeSpan.innerText = `Remaining Time: ${minutes}:${seconds}`;
+                          timeSpan.innerText = ` ${minutes}:${seconds}`;
                         }
                       }}
                       style={{ display: "none" }}
