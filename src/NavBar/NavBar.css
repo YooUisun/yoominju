@@ -27,7 +27,6 @@
   white-space: nowrap;
   font-family: "Helvetica Neue", sans-serif;
 }
-
 .nav-list {
   list-style: none;
   display: flex;
@@ -37,10 +36,12 @@
 }
 
 .nav-list li a {
-  font-size: 1.2rem;
+  font-size: 1rem; /* ✅ 현재 1.3rem으로 되어 있음 */
   color: #000000;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-family: "Helvetica Neue", sans-serif; /* ✅ logo의 font-family 추가 */
+  font-weight: 200; /* ✅ logo-link의 font-weight 추가 */
 }
 
 /* hover 시 투명도 변경 */
@@ -58,7 +59,7 @@
 .menu-toggle-button {
   display: none; /* 기본적으로 숨김 (모바일에서만 보이도록 미디어 쿼리 사용) */
   font-size: 1.2rem; /* 텍스트 크기 */
-  font-weight: 200; 
+  font-weight: 200;
   font-family: "Helvetica Neue", sans-serif;
   color: #000000; /* 텍스트 색상 */
   background: transparent; /* 배경 투명 */
@@ -67,7 +68,7 @@
   padding: 0;
   box-sizing: content-box;
   position: absolute; /* nav-container 기준 */
-  top: 20px; /* 로고와 비슷한 높이로 조정 */
+  top: 30px; /* 로고와 비슷한 높이로 조정 */
   right: 10px;
   z-index: 2;
   /* 햄버거 아이콘 관련 속성들은 제거 */
