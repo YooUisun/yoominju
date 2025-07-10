@@ -596,7 +596,7 @@ export default function WorkDetail() {
                             2,
                             "0"
                           );
-                          timeSpan.innerText = `Remaining Time: ${minutes}:${seconds}`;
+                          timeSpan.innerText = ` ${minutes}:${seconds}`;
                         }
                       }}
                       style={{ display: "none" }}
