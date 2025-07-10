@@ -549,7 +549,7 @@ export default function WorkDetail() {
                         style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }}
                       >
                         <img
-                          src={process.env.PUBLIC_URL + "/img/play.PNG"}
+                          src={process.env.PUBLIC_URL + "/img/play.png"}
                           alt="Play"
                           style={{ width: '24px', height: '24px' }}
                         />
@@ -565,7 +565,7 @@ export default function WorkDetail() {
                         style={{ border: 'none', background: 'none', cursor: 'pointer', padding: 0 }}
                       >
                         <img
-                          src={process.env.PUBLIC_URL + "/img/play-pause.PNG"}
+                          src={process.env.PUBLIC_URL + "/img/play-pause.png"}
                           alt="Stop"
                           style={{ width: '30px', height: '30px' }}
                         />
