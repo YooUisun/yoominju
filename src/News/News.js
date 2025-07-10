@@ -8,9 +8,9 @@ const newsItem = {
   title: "Rundgang",
   date: "July 18 – July 20, 2025",
   images: [
-    "../img/News/Exhibition1.webp",
-    "../img/News/Exhibition2.webp", 
-    "../img/News/Exhibition3.webp",
+    "/img/News/Exhibition1.webp",
+    "/img//News/Exhibition2.webp",
+    "/img/News/Exhibition3.webp",
   ],
 };
 
