@@ -58,7 +58,7 @@ function NavBar() {
                 className={isActive("/work") ? "active-nav-link" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                works
+                WORKS
               </Link>
             </li>
             <li>
@@ -67,7 +67,7 @@ function NavBar() {
                 className={isActive("/news") ? "active-nav-link" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                news
+                NEWS
               </Link>
             </li>
             <li>
@@ -76,7 +76,7 @@ function NavBar() {
                 className={isActive("/about") ? "active-nav-link" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                about
+                ABOUT
               </Link>
             </li>
             <li>
@@ -85,7 +85,7 @@ function NavBar() {
                 className={isActive("/contact") ? "active-nav-link" : ""}
                 onClick={() => setMenuOpen(false)}
               >
-                contact
+                CONTACT
               </Link>
             </li>
           </ul>
