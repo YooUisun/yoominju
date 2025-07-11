@@ -14,7 +14,8 @@
 /* 미디어 쿼리: 화면 너비가 768px 이하일 때 (모바일) */
 @media (max-width: 768px) {
   .footer {
-    font-size: 0.875rem; 
+    font-size: 0.7rem; 
     margin-top: 0; 
+    font-family: 'Heletica Neue, sans-serif';
   }
 }

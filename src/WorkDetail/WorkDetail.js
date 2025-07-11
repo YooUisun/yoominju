@@ -330,8 +330,8 @@ const workData = [
     year: "2022",
     gallery: [
       { src: process.env.PUBLIC_URL + "/img/der Tag/1.mp4" },
-      { src: process.env.PUBLIC_URL + "/img/der Tag/3.webp" ,caption: "Exhibition view at Feldf+nf Gallery" },
-      { src: process.env.PUBLIC_URL + "/img/der Tag/4.webp" ,caption: "Exhibition view at Feldf+nf Gallery" },
+      { src: process.env.PUBLIC_URL + "/img/der Tag/3.webp" ,caption: "Exhibition view at feldfünf Gallery" },
+      { src: process.env.PUBLIC_URL + "/img/der Tag/4.webp" ,caption: "Exhibition view at feldfünf Gallery" },
     ],
   },
   {
