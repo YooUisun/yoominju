@@ -466,6 +466,12 @@ const workData = [
   // ... 나머지도 같은 형식으로 이어서 작성
 ];
 
+// 오디오 파일인지 판단하는 헬퍼 함수
+const isAudioFile = (src) => {
+  // 소문자로 변환된 src를 받아서 확장자 체크
+  return src.endsWith('.mp3') || src.endsWith('.wav') || src.endsWith('.ogg');
+};
+
 export default function WorkDetail() {
   const { id } = useParams();
   const item = workData.find((w) => w.id === parseInt(id, 10));
@@ -486,12 +492,12 @@ export default function WorkDetail() {
       </div>
 
       <div className="detail-gallery-vertical">
-        {item.gallery.map((entry, idx) => {
+        {item.gallery.map((entry, idx, arr) => { // arr (전체 배열)을 받아서 다음 요소 체크
           const src = entry.src?.toLowerCase();
           if (!src) return null;
 
           const isVideo = src.endsWith(".mov") || src.endsWith(".mp4");
-          const isAudio = src.endsWith(".mp3");
+          const isAudio = isAudioFile(src); // 헬퍼 함수 사용
 
           let languageLabel = "";
 
@@ -518,9 +524,21 @@ export default function WorkDetail() {
           // ✅ 특정 ID에 따라 클래스 추가
           const blockClassName = `detail-block ${item.id === 22 || item.id === 23 ? 'large-image-work' : ''}`;
 
+          // 현재 entry가 오디오이고, 다음 entry가 존재하며, 다음 entry가 오디오가 아닐 때 (즉, 이미지일 때)
+          const isLastAudioBeforeImage =
+            isAudio && // 현재 파일이 오디오인지
+            (idx + 1 < arr.length) && // 다음 파일이 존재하는지
+            !isAudioFile(arr[idx + 1].src); // 다음 파일이 오디오가 아닌지 (즉, 이미지일 가능성)
+
+          // 마진 스타일을 조건부로 적용
+          const audioImageGapStyle = isLastAudioBeforeImage ? { marginBottom: '60px' } : {}; // 원하는 마진 값으로 조절!
 
           return (
-            <div key={idx} className={blockClassName} style={blockStyle}> {/* ✅ 클래스 이름 변경 */}
+            <div
+              key={idx}
+              className={blockClassName}
+              style={{ ...blockStyle, ...audioImageGapStyle }} 
+            >
               <div className="detail-thumb">
                 {isVideo ? (
                   <video controls width="100%" poster={entry.poster ? process.env.PUBLIC_URL + entry.poster : ''}>
@@ -539,7 +557,7 @@ export default function WorkDetail() {
                         gap: "10px",
                       }}
                     >
-                                              <button
+                      <button
                         onClick={() => {
                           const audio = document.getElementById(`audio-${idx}`);
                           if (audio) {
