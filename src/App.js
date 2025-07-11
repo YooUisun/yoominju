@@ -1,5 +1,6 @@
 import React from "react";
-import { Routes, Route, useLocation } from "react-router-dom";
+// 1. BrowserRouter 대신 HashRouter를 임포트하고, 이름을 Router로 바꿔서 사용
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom"; 
 
 import Main from "./Main/Main";
 import Work from "./Work/Work";
@@ -22,20 +23,23 @@ export default function App() {
   const isExactWorkPage = location.pathname === "/work";
 
   return (
-    <div className={`app-container ${isExactWorkPage ? "work-min-height" : ""}`}>
-      {!isMainPage && <NavBar />}
-      <div className="routes-wrapper">
-        <Routes>
-          {/* ✅ Main 컴포넌트의 path를 '/'로 변경 */}
-          <Route path="/" element={<Main />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/work/:id" element={<WorkDetail />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+    // 2. 최상위 <div className="app-container"> 대신 <Router>로 감싸주기
+    <Router> 
+      <div className={`app-container ${isExactWorkPage ? "work-min-height" : ""}`}>
+        {!isMainPage && <NavBar />}
+        <div className="routes-wrapper">
+          <Routes>
+            {/* ✅ Main 컴포넌트의 path를 '/'로 변경 */}
+            <Route path="/" element={<Main />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/work/:id" element={<WorkDetail />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" />
+          </Routes>
+        </div>
+        {!isMainPage && <Footer />}
       </div>
-      {!isMainPage && <Footer />}
-    </div>
+    </Router> // <Router> 태그 닫기
   );
 }
