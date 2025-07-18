@@ -11,10 +11,25 @@ body, html {
   background-size: cover; /* 이미지 꽉 채우기 */
   background-position: center;
   position: relative;
-  /* cursor: none; */ /* ✅ 이젠 기본 커서가 보여야 하니 제거 */
+  /* cursor: none; */ /* 이젠 기본 커서가 보여야 하니 제거 */
   overflow: hidden;
 }
 
+/* PC 버전의 main-title 스타일 (기본값) */
+.main-title {
+  position: absolute;
+  top: 50%; /* 위에서 50% 지점 */
+  left: 50%; /* 왼쪽에서 50% 지점 */
+  transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
+  color: #fff; /* 글자색을 흰색으로 (배경 이미지에 따라 조절) */
+  font-size: 1.5em; /* PC/기본 글자 크기 */
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+
+/* ✅ 여기가 중요! 미디어 쿼리 안에서 모바일용 스타일 재정의 */
 @media (max-width: 500px) {
   html, body {
     overflow: hidden;
@@ -32,16 +47,10 @@ body, html {
     background-position: 20% center;
     filter: url(#wavy); /* 물결 효과 모바일에서만 적용 */
   }
-}
 
-.main-title {
-  position: absolute;
-  top: 50%; /* 위에서 50% 지점 */
-  left: 50%; /* 왼쪽에서 50% 지점 */
-  transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
-  color: #fff; /* 글자색을 흰색으로 (배경 이미지에 따라 조절) */
-  font-size: 1.5em; /* 글자 크기 (원하는 대로 조절) */
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-   font-weight: 400;
+  /* ✅ 모바일 화면에서만 적용될 main-title 스타일 */
+  .main-title {
+    font-size: 1em; /* 모바일에서 글자 크기를 더 작게 (예: 0.8em) */
+    /* font-size는 원하는 크기로 조절해봐! */
+  }
 }
