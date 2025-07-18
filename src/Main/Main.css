@@ -11,20 +11,8 @@ body, html {
   background-size: cover; /* 이미지 꽉 채우기 */
   background-position: center;
   position: relative;
-  cursor: none; /* 기본 커서 제거 */
+  /* cursor: none; */ /* ✅ 이젠 기본 커서가 보여야 하니 제거 */
   overflow: hidden;
-}
-
-/* 돋보기 스타일, 기존 mosaic-overlay 대신 사용 */
-.magnifier {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  pointer-events: none;
-  border-radius: 50%;
-  transform: translate(0, 0);
-  z-index: 10;
-  display: none; /* 초기엔 숨김 */
 }
 
 @media (max-width: 500px) {
@@ -35,13 +23,25 @@ body, html {
 
   .main-container {
     overflow: hidden;
-    position: fixed; /* ✅ 뷰포트 고정 */
+    position: fixed; /* 뷰포트 고정 */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
     background-position: 20% center;
-    filter: url(#wavy); /* ✅ 물결 효과 모바일에서만 적용 */
+    filter: url(#wavy); /* 물결 효과 모바일에서만 적용 */
   }
+}
+
+.main-title {
+  position: absolute;
+  top: 50%; /* 위에서 50% 지점 */
+  left: 50%; /* 왼쪽에서 50% 지점 */
+  transform: translate(-50%, -50%); /* 정확히 중앙 정렬 */
+  color: #fff; /* 글자색을 흰색으로 (배경 이미지에 따라 조절) */
+  font-size: 1.5em; /* 글자 크기 (원하는 대로 조절) */
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+   font-weight: 400;
 }
