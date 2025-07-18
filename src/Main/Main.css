@@ -50,7 +50,7 @@ body, html {
 
   /* ✅ 모바일 화면에서만 적용될 main-title 스타일 */
   .main-title {
-    font-size: 1em; /* 모바일에서 글자 크기를 더 작게 (예: 0.8em) */
+    font-size: 0.7em; /* 모바일에서 글자 크기를 더 작게 (예: 0.8em) */
     /* font-size는 원하는 크기로 조절해봐! */
   }
 }
