@@ -187,6 +187,12 @@ const workData = [
     title: "열아홉(18)",
     year: "2013",
   },
+  {
+    id: 30,
+    src: process.env.PUBLIC_URL + "/img/WorksMain/Mosun.webp",
+    title:"Mosun",
+    year:"2025",
+  },
 ];
 const layouts = {
   lg: [
@@ -236,9 +242,9 @@ const layouts = {
     { i: "1", x: 0, y: 1, w: 4.5, h: 8 }, // Schritte² - Young Berlin Artists– Group Exhibition at Art Week Berlin
     { i: "2", x: 6, y: 1.5, w: 6, h: 5 }, // Sorgenkissenl
     { i: "3", x: 7, y: 3, w: 5, h: 10 }, // 나를 담는 모든 동그라미들을 위하여...
+    { i: "4", x: 0, y: 7.5, w: 6, h: 5 }, // 1st Seoul International Fireworks Festivalr
     { i: "5", x: 0, y: 5, w: 5, h: 9 }, // Sie schweben leicht, setzen sich dann ab und werden schwer
     { i: "6", x: 6, y: 5, w: 6, h: 6 }, // Cup - Sie schweben leicht, setzen sich dann ab und werden schwer
-    { i: "4", x: 0, y: 7.5, w: 6, h: 5 }, // 1st Seoul International Fireworks Festivalr
     { i: "7", x: 0, y: 13, w: 5, h: 5 }, // Joyfulling waiting 13 Crackle by 1, 2
     { i: "8", x: 9, y: 13, w: 6, h: 4 }, // 1, 2
 
