@@ -14,15 +14,18 @@
     <title>yoominju</title>
 
     <!-- 🔥 GitHub Pages 새로고침 해결 코드 -->
-    <script>
-      (function () {
-        var redirect = sessionStorage.redirect;
-        if (redirect) {
-          sessionStorage.removeItem("redirect");
-          history.replaceState(null, null, redirect);
-        }
-      })();
-    </script>
+<script>
+  (function () {
+    var params = new URLSearchParams(window.location.search);
+    var p = params.get("p");
+    if (p) {
+      params.delete("p");
+      var newUrl = p + (params.toString() ? "?" + params.toString() : "") + window.location.hash;
+      window.history.replaceState(null, null, newUrl);
+    }
+  })();
+</script>
+
 
   </head>
   <body>
