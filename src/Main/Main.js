@@ -20,7 +20,7 @@ const Main = () => {
         backgroundImage: `url('../img/MainBackground.webp')`, 
       }}
     >
-      <h1 className="main-title">yoominju</h1>
+      <h1 className="main-title"></h1>
 
     </div>
   );
