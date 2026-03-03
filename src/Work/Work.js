@@ -189,7 +189,7 @@ const workData = [
   },
   {
     id: 30,
-    src: process.env.PUBLIC_URL + "/img/WorksMain/Mosun.webp",
+    src: process.env.PUBLIC_URL + "/img/WorksMain/Mosun.jpg",
     title:"Mosun",
     year:"2025",
   },
@@ -235,6 +235,7 @@ const layouts = {
     { i: "27", x: 5, y: 80, w: 1.34, h: 10 }, // ASYAAF (Alles Okay 아래 살짝 왼쪽)
     { i: "28", x: 6.5, y: 80, w: 1.3, h: 10 }, // Daum Festival (ASYAAF 바로 오른쪽)
     { i: "29", x: 9, y: 90, w: 4, h: 10 }, // 열아홉(18) (Daum Festival 오른쪽)
+    { i: "30", x: 0, y: 110, w: 3, h: 12 },
   ],
 
   sm: [
@@ -275,6 +276,7 @@ const layouts = {
     { i: "27", x: 1, y: 93, w: 3, h: 4.2 }, // ASYAAF
     { i: "28", x: 4, y: 93, w: 3, h: 4 }, // Daum Festival
     { i: "29", x: 9, y: 94, w: 11, h: 10 }, // 열아홉(18)
+    { i: "30", x: 0, y: 110, w: 12, h: 8 },
   ],
 };
 
