@@ -463,6 +463,21 @@ const workData = [
       { src: process.env.PUBLIC_URL + "/img/열아홉/7.webp" },
     ],
   },
+    {
+    id: 30,
+    title: "Mosun",
+    year: "2025",
+    gallery: [
+      { src: process.env.PUBLIC_URL + "/img/Mosun/1.webp" },
+      { src: process.env.PUBLIC_URL + "/img/Mosun/2.webp" },
+      { src: process.env.PUBLIC_URL + "/img/Mosun/3.webp" },
+      { src: process.env.PUBLIC_URL + "/img/Mosun/4.webp" },
+      { src: process.env.PUBLIC_URL + "/img/Mosun/5.webp" },
+      { src: process.env.PUBLIC_URL + "/img/Mosun/6.webp" },
+      { src: process.env.PUBLIC_URL + "/img/Mosun/8.webp" },
+      { src: process.env.PUBLIC_URL + "/img/Mosun/9.mp4" },
+    ],
+  },
   // ... 나머지도 같은 형식으로 이어서 작성
 ];
 
