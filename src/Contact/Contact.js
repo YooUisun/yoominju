@@ -9,7 +9,7 @@ function Contact() {
       <div className="contact-info">
         <p>
           Contact&nbsp;
-          <a href="mailto:958.mum@gmail.com">958.mum@gmail.com</a>
+          <a href="mailto:yoomangju.contact@gmail.com">yoomangju.contact@gmail.com</a>
         </p>
       </div>
 
