@@ -1,6 +1,8 @@
- import React from "react";
+import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 
+import Pwwib from "./PWWIB/Pwwib";
+import PwwibDetail from "./PWWIB/PwwibDetail";
 import Main from "./Main/Main";
 import Work from "./Work/Work";
 import WorkDetail from "./WorkDetail/WorkDetail";
@@ -15,24 +17,27 @@ import "./App.css";
 
 export default function App() {
   const location = useLocation();
-  // isMainPage 로직 변경: 루트 경로('/')일 때가 메인 페이지
-  const isMainPage = location.pathname.replace(/\/$/, "") === ""; // 또는 location.pathname === "/"
+  const isMobile = window.innerWidth <= 500;
+  const isMainPage = !isMobile && location.pathname.replace(/\/$/, "") === "";
 
   // 오직 정확히 /work 경로일 때만 true (WorkDetail 포함 안함)
-  const isExactWorkPage = location.pathname === "/work";
+  const isExactWorkPage = location.pathname === "/work" || location.pathname.startsWith("/pwwib");
 
   return (
-    <div className={`app-container ${isExactWorkPage ? "work-min-height" : ""}`}>
+    <div
+      className={`app-container ${isExactWorkPage ? "work-min-height" : ""}`}
+    >
       {!isMainPage && <NavBar />}
       <div className="routes-wrapper">
         <Routes>
-          {/* ✅ Main 컴포넌트의 path를 '/'로 변경 */}
           <Route path="/" element={<Main />} />
           <Route path="/work" element={<Work />} />
           <Route path="/work/:id" element={<WorkDetail />} />
           <Route path="/news" element={<News />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/pwwib" element={<Pwwib />} />
+          <Route path="/pwwib/:id" element={<PwwibDetail />} />
         </Routes>
       </div>
       {!isMainPage && <Footer />}

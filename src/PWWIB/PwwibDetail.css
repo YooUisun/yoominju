@@ -1,0 +1,57 @@
+.pwwib-detail-wrapper {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.pwwib-detail-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pwwib-detail-title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.pwwib-detail-info {
+  font-size: 0.85rem;
+  font-weight: 200;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #000;
+}
+
+.pwwib-detail-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.pwwib-detail-block {
+  width: 100%;
+}
+
+.pwwib-detail-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pwwib-detail-caption {
+  font-size: 0.75rem;
+  font-weight: 200;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #666;
+  text-align: right;
+  margin-top: 6px;
+}
+
+@media (max-width: 500px) {
+  .pwwib-detail-wrapper {
+    padding: 40px 16px;
+  }
+}
