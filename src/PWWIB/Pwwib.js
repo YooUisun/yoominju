@@ -6,20 +6,8 @@ const pwwibData = [
   {
     id: 1,
     src: process.env.PUBLIC_URL + "/img/PWWIB/1.webp",
-    title: "title 1",
-    info: "2026, editorial, portraits",
-  },
-  {
-    id: 2,
-    src: process.env.PUBLIC_URL + "/img/PWWIB/2.webp",
-    title: "title 2",
-    info: "2026, editorial, portraits",
-  },
-  {
-    id: 3,
-    src: process.env.PUBLIC_URL + "/img/PWWIB/3.webp",
-    title: "title 3",
-    info: "2026, editorial, portraits",
+    title: "류지민",
+    info: "요리사 및 총괄 매니저, OMONI Restaurant",
   },
 ];
 

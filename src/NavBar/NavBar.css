@@ -83,8 +83,15 @@
     min-width: unset !important;
   }
 
+  .logo {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
   .menu-toggle-button {
     display: block !important;
+    top: 22px;
+    right: 20px;
   }
 
   .nav-list {

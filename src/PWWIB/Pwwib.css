@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap");
+
 .pwwib-section {
   display: flex;
   flex-direction: column;
@@ -39,16 +41,16 @@
   margin-top: 16px;
   font-size: 1rem;
   font-weight: 200;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #000;
   text-align: center;
 }
 
 .pwwib-info {
-  margin-top: 4px;
+  margin-top: -10px;
   font-size: 0.85rem;
   font-weight: 200;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #000;
   text-align: center;
 }

@@ -1,57 +1,91 @@
-.pwwib-detail-wrapper {
-  max-width: 660px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
-
-.pwwib-detail-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.pwwib-detail-title {
-  font-size: 1.2rem;
-  font-weight: 300;
-  font-family: "Helvetica Neue", sans-serif;
-  color: #000;
-  margin-bottom: 8px;
-}
-
-.pwwib-detail-info {
-  font-size: 0.85rem;
-  font-weight: 200;
-  font-family: "Helvetica Neue", sans-serif;
-  color: #000;
-}
-
-.pwwib-detail-gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-}
-
-.pwwib-detail-block {
+.pwwib-detail-page {
+  background-color: #473127;
+  min-height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.pwwib-detail-image {
+.pwwib-slide-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 60px auto;
+  overflow: hidden;
+}
+
+.pwwib-slide-img {
   width: 100%;
   height: auto;
   display: block;
+  transition: opacity 0.3s ease;
 }
 
-.pwwib-detail-caption {
-  font-size: 0.75rem;
-  font-weight: 200;
-  font-family: "Helvetica Neue", sans-serif;
-  color: #666;
-  text-align: right;
-  margin-top: 6px;
+.pwwib-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #add8ff;
+  font-size: 2.2rem;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.pwwib-slide-container:hover .pwwib-arrow {
+  opacity: 1;
+}
+
+.pwwib-arrow:hover {
+  opacity: 0.6;
+}
+
+.pwwib-arrow.left {
+  left: 29px;
+}
+
+.pwwib-arrow.right {
+  right: 29px;
+  padding-left: 4px;
+}
+
+.pwwib-slide-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.pwwib-slide {
+  min-width: 100%;
 }
 
 @media (max-width: 500px) {
-  .pwwib-detail-wrapper {
-    padding: 40px 16px;
+  .pwwib-detail-page {
+    align-items: flex-start;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+
+  .pwwib-slide-container {
+    max-width: 100%;
+    margin: 20px 16px 0 16px;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .pwwib-arrow {
+    display: none;
   }
 }
