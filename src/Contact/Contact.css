@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap");
+
 body {
-  overflow-x: hidden;  /* 바디 레벨에서 가로 스크롤 차단 */
+  overflow-x: hidden;
 }
 
 .contact-section {
@@ -10,16 +12,17 @@ body {
   flex-wrap: nowrap;
   padding: 3rem;
   margin-top: 17%;
-  gap: 40rem;            /* ❗ 큰 간격 */
+  gap: 40rem;
   overflow-x: hidden;
-  white-space: nowrap;  /* ❗ 줄바꿈 금지 */
-  min-width: 800px;     /* ❗ 큰 최소 너비 */
+  white-space: nowrap;
+  min-width: 800px;
 }
 
 .contact-info,
 .contact-mail {
   font-size: 1.2rem;
   font-weight: 200;
+  font-family: "Inter", sans-serif;
   margin: 0;
   min-width: 250px;
   white-space: nowrap;
@@ -29,11 +32,14 @@ body {
 .contact-section a {
   font-size: 1.2rem;
   font-weight: 300;
+  font-family: "Inter", sans-serif;
   color: inherit;
 }
+
 .contact-section a:visited {
   color: inherit;
 }
+
 .contact-section a:hover {
   text-decoration: underline;
 }
@@ -43,19 +49,18 @@ body {
   margin-left: 2rem;
 }
 
-/* ✅ 모바일에서 세로 정렬 + 가로 스크롤 제거 */
 @media (max-width: 768px) {
   .contact-section {
-    flex-direction: column;   /* 세로 정렬 */
-    align-items: flex-start;  /* 왼쪽 정렬 */
-    gap: 0;                /* 큰 gap 제거 */
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
     padding: 2rem;
     margin-top: 10%;
-    width: 80%;             
-    min-width: auto;          /* min-width 해제 */
-    white-space: normal;      /* 줄바꿈 허용 */
-    flex-wrap: wrap;          /* 필요하면 wrap */
-    overflow-x: hidden;       /* 가로 스크롤 차단 */
+    width: 100%;
+    min-width: auto;
+    white-space: nowrap;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
 
   .contact-info,
@@ -63,12 +68,19 @@ body {
     width: 100%;
     min-width: auto;
     text-align: left;
+    font-size: clamp(1.3rem, 4.5vw, 1.2rem);
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    white-space: nowrap;
   }
 
-  .contact-info,
-  .contact-mail {
-    font-size: 20px;
-    font-weight: 200;
-    font-family: 'Helvetica Nenu', 'sans-serif';
+  .contact-section a {
+    font-size: clamp(1.1rem, 3.5vw, 1rem);
+    font-family: "Inter", sans-serif;
+  }
+
+  .contact-info p a,
+  .contact-mail p a {
+    margin-left: 0.5rem;
   }
 }
