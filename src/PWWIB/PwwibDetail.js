@@ -7,11 +7,6 @@ const pwwibData = [
     id: 1,
     slides: [
       process.env.PUBLIC_URL + "/img/PWWIBDetail/1.webp",
-      process.env.PUBLIC_URL + "/img/PWWIBDetail/2.webp",
-      process.env.PUBLIC_URL + "/img/PWWIBDetail/3.webp",
-      process.env.PUBLIC_URL + "/img/PWWIBDetail/4.webp",
-      process.env.PUBLIC_URL + "/img/PWWIBDetail/5.webp",
-      process.env.PUBLIC_URL + "/img/PWWIBDetail/6.webp",
     ],
   },
 ];
