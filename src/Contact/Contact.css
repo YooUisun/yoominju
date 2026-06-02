@@ -62,20 +62,19 @@ body {
     overflow-x: hidden;
     box-sizing: border-box;
   }
-
   .contact-info,
   .contact-mail {
     width: 100%;
     min-width: auto;
     text-align: left;
-    font-size: clamp(1.3rem, 4.5vw, 1.2rem);
+    font-size: clamp(0.9rem, 4.5vw, 1.3rem);
     font-family: "Inter", sans-serif;
     font-weight: 200;
     white-space: nowrap;
   }
 
   .contact-section a {
-    font-size: clamp(1.1rem, 3.5vw, 1rem);
+    font-size: clamp(0.9rem, 4.5vw, 1.3rem);
     font-family: "Inter", sans-serif;
   }
 
