@@ -4,10 +4,16 @@ import "./Pwwib.css";
 
 const pwwibData = [
   {
+    id: 2,
+    src: process.env.PUBLIC_URL + "/img/PWWIB/2.webp",
+    title: "성소영",
+    info: "온라인 독일어 학원 '뿌스빠센' 운영 · 과학기술사 석사생 · 도서관 사서",
+  },
+  {
     id: 1,
     src: process.env.PUBLIC_URL + "/img/PWWIB/1.webp",
     title: "류지민",
-    info: "요리사 및 총괄 매니저, OMONI Restaurant",
+    info: "요리사 및 총괄 매니저",
   },
 ];
 
