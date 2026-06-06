@@ -7,7 +7,10 @@ const pwwibData = [
     id: 2,
     src: process.env.PUBLIC_URL + "/img/PWWIB/2.webp",
     title: "성소영",
-    info: "온라인 독일어 학원 '뿌스빠센' 운영 · 과학기술사 석사생 · 도서관 사서",
+    info: [
+      "온라인 독일어 학원 '뿌스빠센' 운영",
+      "과학기술사 석사생 · 도서관 사서",
+    ],
   },
   {
     id: 1,
@@ -26,7 +29,16 @@ export default function Pwwib() {
             <img src={item.src} alt={item.title} className="pwwib-image" />
           </div>
           <p className="pwwib-title">{item.title}</p>
-          <p className="pwwib-info">{item.info}</p>
+          <p className="pwwib-info">
+            {Array.isArray(item.info)
+              ? item.info.map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    {i < item.info.length - 1 && <br />}
+                  </span>
+                ))
+              : item.info}
+          </p>
         </Link>
       ))}
     </section>

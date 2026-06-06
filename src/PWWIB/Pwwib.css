@@ -54,6 +54,10 @@
   color: #000;
   text-align: center;
 }
+.pwwib-info span {
+  display: block;
+  margin-bottom: 6px;
+}
 
 @media (max-width: 500px) {
   .pwwib-section {
