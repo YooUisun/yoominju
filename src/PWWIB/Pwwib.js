@@ -4,6 +4,12 @@ import "./Pwwib.css";
 
 const pwwibData = [
   {
+    id: 4,
+    src: process.env.PUBLIC_URL + "/img/PWWIB/4.webp",
+    title: "김여송",
+    info: "조소과 학생 · 작가 지망생",
+  },
+  {
     id: 3,
     src: process.env.PUBLIC_URL + "/img/PWWIB/3.webp",
     title: "정다혜",
