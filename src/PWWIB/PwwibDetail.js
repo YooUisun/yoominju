@@ -4,6 +4,10 @@ import "./PwwibDetail.css";
 
 const pwwibData = [
   {
+    id: 5,
+    slides: [process.env.PUBLIC_URL + "/img/PWWIBDetail/5.webp"],
+  },
+  {
     id: 4,
     slides: [process.env.PUBLIC_URL + "/img/PWWIBDetail/4.webp"],
   },
