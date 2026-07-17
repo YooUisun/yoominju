@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import "./Pwwib.css";
 
 const pwwibData = [
+    {
+    id: 6,
+    src: process.env.PUBLIC_URL + "/img/PWWIB/6.webp",
+    title: "장솔이",
+    info: "시노그래퍼",
+  },
   {
     id: 5,
     src: process.env.PUBLIC_URL + "/img/PWWIB/5.webp",
