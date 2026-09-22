@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import "./Pwwib.css";
 
 const pwwibData = [
+    {
+    id: 8,
+    src: process.env.PUBLIC_URL + "/img/PWWIB/8.webp",
+    title: "신소연",
+    info: "안무가 · 퍼포먼스 아티스트",
+  },
   {
     id: 7,
     src: process.env.PUBLIC_URL + "/img/PWWIB/7.webp",
