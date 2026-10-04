@@ -66,21 +66,6 @@ const workData = [
       {
         src:
           process.env.PUBLIC_URL +
-          "/img/For all the circles that hold me, for my circles that will hold you/2.webp",
-      },
-      {
-        src:
-          process.env.PUBLIC_URL +
-          "/img/For all the circles that hold me, for my circles that will hold you/3.webp",
-      },
-      {
-        src:
-          process.env.PUBLIC_URL +
-          "/img/For all the circles that hold me, for my circles that will hold you/4.webp",
-      },
-      {
-        src:
-          process.env.PUBLIC_URL +
           "/img/For all the circles that hold me, for my circles that will hold you/6.webp",caption: "Exhibition view - Rundgang at UdK, Klasse. Pryde",
       },
       {

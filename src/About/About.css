@@ -60,7 +60,7 @@
 /* 기본 그리드 설정 */
 .cv-item {
   display: grid;
-  grid-template-columns: 220px 450px 100px; /* 고정값으로 변경 */
+  grid-template-columns: 220px 1fr 100px;  /* 450px → 1fr 으로 변경 */
   grid-auto-rows: min-content;
   padding-bottom: 1rem;
   column-gap: 2rem;
@@ -105,12 +105,13 @@
   grid-column: 2 / 3;
   grid-row: 1;
   justify-self: start;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: visible;
+  overflow-wrap: break-word;
   margin: 0;
   margin-left: 140px;
   margin-top: 27px;
+  text-align: left;  /* 이거 추가! */
 }
 
 /* year */
