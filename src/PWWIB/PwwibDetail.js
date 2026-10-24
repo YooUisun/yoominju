@@ -3,15 +3,19 @@ import { useParams } from "react-router-dom";
 import "./PwwibDetail.css";
 
 const pwwibData = [
-        {
+  {
+    id: 9,
+    slides: [process.env.PUBLIC_URL + "/img/PWWIBDetail/9.webp"],
+  },
+  {
     id: 8,
     slides: [process.env.PUBLIC_URL + "/img/PWWIBDetail/8.webp"],
   },
-      {
+  {
     id: 7,
     slides: [process.env.PUBLIC_URL + "/img/PWWIBDetail/7.webp"],
   },
-    {
+  {
     id: 6,
     slides: [process.env.PUBLIC_URL + "/img/PWWIBDetail/6.webp"],
   },
